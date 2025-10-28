@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSR Impact Overview — Donut Layout</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    :root {
+      --theme: #B04B3B;
+      --theme-light: #D86B56;
+      --bg: #f9f9f9;
+      --text: #333;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 0 20px;
+    }
+
+    .csr-info {
+      flex: 1 1 45%;
+    }
+
+    .csr-info h2 {
+      font-family: 'Raleway', sans-serif;
+      color: var(--theme);
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .csr-info p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .total {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--theme);
+      margin-bottom: 20px;
+    }
+
+    .csr-chart {
+      flex: 1 1 45%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    canvas {
+      max-width: 400px;
+      height: 400px;
+    }
+
+    .legend {
+      margin-top: 30px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      gap: 8px;
+      font-size: 0.95rem;
+    }
+
+    .legend-color {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .csr-info, .csr-chart {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="csr-donut">
+    <div class="container">
+      <div class="csr-info">
+        <h2>CSR Impact Overview (3 Years)</h2>
+        <p>Showcasing IIT Kanpur’s total CSR contribution over the past three years across key focus areas.</p>
+        <div class="total">Total CSR: ₹226.63 Crores</div>
+
+        <div class="legend">
+          <div class="legend-item"><div class="legend-color" style="background:#B04B3B;"></div> Research & Innovation — ₹98.82 Cr</div>
+          <div class="legend-item"><div class="legend-color" style="background:#C35B45;"></div> Infrastructure — ₹91.27 Cr</div>
+          <div class="legend-item"><div class="legend-color" style="background:#D86B56;"></div> Sustainability — ₹28.24 Cr</div>
+          <div class="legend-item"><div class="legend-color" style="background:#E88968;"></div> Health Care — ₹4.71 Cr</div>
+          <div class="legend-item"><div class="legend-color" style="background:#F5A87C;"></div> Education — ₹2.39 Cr</div>
+          <div class="legend-item"><div class="legend-color" style="background:#FBC8A0;"></div> Community Welfare — ₹1.20 Cr</div>
+        </div>
+      </div>
+
+      <div class="csr-chart">
+        <canvas id="donutChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const ctx = document.getElementById('donutChart').getContext('2d');
+
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Research & Innovation', 'Infrastructure', 'Sustainability', 'Health Care', 'Education', 'Community Welfare'],
+        datasets: [{
+          data: [98.82, 91.27, 28.24, 4.71, 2.39, 1.20],
+          backgroundColor: ['#B04B3B', '#C35B45', '#D86B56', '#E88968', '#F5A87C', '#FBC8A0'],
+          borderWidth: 0,
+          hoverOffset: 8
+        }]
+      },
+      options: {
+        cutout: '70%',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#B04B3B',
+            titleColor: '#fff',
+            bodyColor: '#fff',
+            callbacks: {
+              label: function(context) {
+                return `${context.label}: ₹${context.parsed} Cr`;
+              }
+            }
+          }
+        }
+      },
+      plugins: [{
+        id: 'centerText',
+        beforeDraw: (chart) => {
+          const { ctx, chartArea: { width, height } } = chart;
+          ctx.save();
+          ctx.font = 'bold 18px Raleway';
+          ctx.fillStyle = '#B04B3B';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText('₹226.63 Cr', width / 2, height / 2);
+        }
+      }]
+    });
+  </script>
+</body>
+</html>

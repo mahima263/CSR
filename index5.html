@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSR Impact Overview — 3 Year Data</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    :root{
+      --theme: #B04B3B; /* primary theme color */
+      --theme-dark: #8d3f33;
+      --muted: #6b6b6b;
+      --bg: #fbfbfb;
+    }
+
+    *{box-sizing: border-box}
+    body{
+      margin:0; font-family: 'Roboto', sans-serif; background:var(--bg); color:#222;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{max-width:1100px; margin:48px auto; padding:20px}
+
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--theme),var(--theme-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-family:'Raleway',sans-serif}
+    h1{font-family:'Raleway',sans-serif;margin:0;font-size:22px;color:var(--theme)}
+    p.lead{margin:8px 0 0;color:var(--muted)}
+
+    .card{background:#fff;border-radius:12px;box-shadow:0 10px 30px rgba(15,15,15,0.06);padding:24px;margin-top:18px}
+
+    .summary{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
+    .total{font-family:'Raleway',sans-serif;font-size:20px;color:var(--theme)}
+    .sub{color:var(--muted);font-size:14px}
+
+    /* Chart area */
+    .chart-wrap{padding:18px 8px}
+    canvas{max-width:100%;height:420px}
+
+    /* Legend / details below chart */
+    .details{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+    .item{display:flex;gap:10px;align-items:center;background:#fff;padding:8px 12px;border-radius:8px;border:1px solid #f0f0f0}
+    .swatch{width:14px;height:14px;border-radius:3px;background:linear-gradient(90deg,var(--theme),var(--theme-dark))}
+    .item strong{font-size:14px}
+    .muted{color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:700px){
+      header{flex-direction:row;align-items:center}
+      .summary{flex-direction:column;align-items:flex-start}
+      canvas{height:360px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">CSR</div>
+      <div>
+        <h1>CSR Impact Overview (3 Years)</h1>
+        <p class="lead">Breakdown of ₹226.63 Crores across core focus areas</p>
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="summary">
+        <div>
+          <div class="total">Total CSR Contribution</div>
+          <div style="font-size:28px;font-weight:800;margin-top:6px">₹226.63 <span style="font-size:14px;font-weight:500;color:var(--muted)">Crores (3 years)</span></div>
+        </div>
+        <div style="text-align:right">
+          <div class="sub">Period: 2022 — 2025</div>
+          <div class="sub">Source: Internal CSR records</div>
+        </div>
+      </div>
+
+      <div class="chart-wrap">
+        <canvas id="csrChart" aria-label="CSR horizontal bar chart" role="img"></canvas>
+      </div>
+
+      <div class="details">
+        <div class="item"><div class="swatch"></div><div><strong>Research & Innovation</strong><div class="muted">₹98.82 Cr</div></div></div>
+        <div class="item"><div class="swatch"></div><div><strong>Infrastructure</strong><div class="muted">₹91.27 Cr</div></div></div>
+        <div class="item"><div class="swatch"></div><div><strong>Sustainability</strong><div class="muted">₹28.24 Cr</div></div></div>
+        <div class="item"><div class="swatch"></div><div><strong>Health Care</strong><div class="muted">₹4.71 Cr</div></div></div>
+        <div class="item"><div class="swatch"></div><div><strong>Education</strong><div class="muted">₹2.39 Cr</div></div></div>
+        <div class="item"><div class="swatch"></div><div><strong>Community Welfare</strong><div class="muted">₹1.20 Cr</div></div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Data
+    const labels = [
+      'Research & Innovation',
+      'Infrastructure',
+      'Sustainability',
+      'Health Care',
+      'Education',
+      'Community Welfare'
+    ];
+    const values = [98.82, 91.27, 28.24, 4.71, 2.39, 1.20];
+
+    const ctx = document.getElementById('csrChart').getContext('2d');
+
+    // create gradient for bars
+    const gradient = ctx.createLinearGradient(0, 0, 600, 0);
+    gradient.addColorStop(0, '#B04B3B');
+    gradient.addColorStop(1, '#D86B56');
+
+    const csrChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'CSR (₹ Cr)',
+          data: values,
+          backgroundColor: gradient,
+          borderRadius: 8,
+          barThickness: 28,
+          borderSkipped: false
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        maintainAspectRatio: false,
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function(context){
+                return '₹ ' + context.parsed.x + ' Cr';
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            ticks: { color: '#444' },
+            grid: { color: '#eee' }
+          },
+          y: {
+            ticks: { color: '#222', font: { family: 'Raleway, Roboto', weight: 600 } },
+            grid: { display: false }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

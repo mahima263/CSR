@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Landify Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>IIT Kanpur CSR</title>
+  <meta name="description" content="IIT Kanpur’s Corporate Social Responsibility (CSR) initiatives focus on driving impactful change through innovation, education, sustainability, and social empowerment. Partner with IITK to create a better tomorrow.">
+  <meta name="keywords" content="IIT Kanpur, CSR, Corporate Social Responsibility, IITK CSR, Sustainability, Education, Innovation, Social Impact, Research Collaboration, IITK Foundation">
+  
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/IITKLogo.png" rel="icon">
+  <link href="assets/img/IITKLogo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -18,11 +19,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap JS Bundle (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +31,10 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -38,1955 +43,1724 @@
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-
+  
+      <!-- Logo + Vertical Line + Sitename -->
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-
-        <h1 class="sitename">IITK CSR</h1>
+        <img src="assets/img/IITKLogo.png" alt="IIT Kanpur Logo" class="iitk-logo">
+        <div class="vertical-line"></div>
+        <h1 class="sitename ms-2">IITK CSR</h1>
       </a>
-
+  
+      <!-- Navbar -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#features">Domain</a></li>
-          <li><a href="#services">Testimonials</a></li>
-        
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#features">Impact Areas</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#contact">Testimonials</a></li>
+          <li><a href="#contact">FAQs</a></li>
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
-
+  
+      <!-- Button -->
+      <a class="btn-getstarted" href="#about">Talk to us</a>
+  
     </div>
   </header>
-
+  
+  <style>
+    /* Logo + Text Styling */
+    
+  
+    .vertical-line {
+      width: 2.5px;
+      height: 55px;         /* Adjusted to align with bigger logo */
+      background-color: #B04B34;
+      margin: 0 15px;
+    }
+  
+    .sitename {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #B04B34;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+  
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+  
+    /* Button Styling */
+    .btn-getstarted {
+      background: #B04B34;
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+  
+    .btn-getstarted:hover {
+      background: #913C2A;
+    }
+  </style>
+  
+  
   <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
-            <div class="hero-content">
-              <h1 class="hero-title">Creating Digital Experiences That Matter</h1>
-              <p class="hero-description">We craft beautiful, functional, and meaningful digital solutions that help
-                businesses connect with their audiences in authentic ways.</p>
-             
-              <div class="hero-stats">
-                <div class="stat-item">
-                  <span class="stat-number">150+</span>
-                  <span class="stat-label">Projects Completed</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">98%</span>
-                  <span class="stat-label">Client Satisfaction</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number">24/7</span>
-                  <span class="stat-label">Support Available</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="300">
-            <div class="hero-visual">
-              <div class="hero-image-wrapper">
-                <img src="assets/img/illustration/illustration-15.webp" class="img-fluid hero-image" alt="Hero Image">
-                <div class="floating-elements">
-                  <div class="floating-card card-1">
-                    <i class="bi bi-lightbulb"></i>
-                    <span>Innovation</span>
-                  </div>
-                  <div class="floating-card card-2">
-                    <i class="bi bi-award"></i>
-                    <span>Excellence</span>
-                  </div>
-                  <div class="floating-card card-3">
-                    <i class="bi bi-people"></i>
-                    <span>Collaboration</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+    <section id="csr-banner" class="csr-banner">
+      <div class="csr-banner-wrapper">
+        <img src="assets/img/about/bannerji.jpeg" 
+             class="csr-banner-image" 
+             alt="CSR Banner">
       </div>
+    </section>
+    
+<style>
+   
+    /* CSR Banner Section */
+    .csr-banner {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .csr-banner-wrapper {
+      width: 100%;
+      height: 90vh; /* perfect height for desktops/laptops */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .csr-banner-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* ensures full coverage without distortion */
+      object-position: center;
+      display: block;
+    }
+    
+    /* Medium laptop screens */
+    @media (max-width: 1440px) {
+      .csr-banner-wrapper {
+        height: 85vh;
+      }
+    }
+    
+    /* Small laptops */
+    @media (max-width: 1280px) {
+      .csr-banner-wrapper {
+        height: 90vh;
+      }
+    }
+    
+    /* Large tablets or small laptops */
+    @media (max-width: 1024px) {
+      .csr-banner-wrapper {
+        height: 90vh;
+      }
+    }
+    
 
-    </section><!-- /Hero Section -->
+   
+  </style>
+    
+    
+    <!-- /Hero Section -->
+
+
+
+
 
     <!-- About Section -->
     <section id="about" class="about section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-5">
-
+        <div class="row gy-5 align-items-center">
+    
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="content-wrapper">
               <div class="section-header">
-                <span class="section-badge">ABOUT OUR CSR</span>
-                <h2>Corporate Social Responsibility at IIT Kanpur: A Commitment to Inclusive Progress</h2>
-              </div>
-
-              <p class="lead-text">At IIT Kanpur, we believe institutions of higher learning have a responsibility that
-                goes beyond academic excellence—a shared commitment to national development through inclusive progress.
+                <h2 style="
+                color: #B04B34;">
+                Corporate Social Responsibility at IIT Kanpur
+              </h2>
+                            </div>
+    
+              <p>
+                At IIT Kanpur, we believe higher education institutes carry a responsibility beyond academics and innovation. Guided by our ethos, CSR here is not just a statutory requirement, but a shared commitment, where academia and industry collaborate to address society’s pressing challenges.
               </p>
-
-              <p class="description-text">Our ethos is rooted in "Together We Grow", where academia and industry
-                collaborate to address pressing societal challenges. CSR is not an ancillary activity but a central
-                pillar of our institutional purpose, translating corporate vision into tangible, high-impact outcomes.
+    
+              <p>
+                We partner with corporations to translate their CSR vision into high-impact, measurable outcomes blending innovation, empathy, and responsibility. Our curated programs align with national development priorities and Sustainable Development Goals (SDGs), leveraging faculty expertise, student ingenuity and expert outreach partners.
               </p>
-
-              <!-- <div class="stats-grid">
-            <div class="stat-item">
-              <div class="stat-number">50+</div>
-              <div class="stat-label">CSR Initiatives</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">8</div>
-              <div class="stat-label">SDGs Addressed</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">100+</div>
-              <div class="stat-label">Village Communities</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">60+</div>
-              <div class="stat-label">Years of Excellence</div>
-            </div>
-          </div> -->
             </div>
           </div>
-
+    
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="visual-section">
               <div class="main-image-container">
-                <img src="assets/img/about/dora img.jpg" alt="IIT Kanpur CSR community initiative"
-                  class="img-fluid main-visual">
-
-              </div>
-
-              
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row">
-          <div class="col-12" data-aos="fade-up" data-aos-delay="400">
-            <div class="features-section">
-              <div class="row gy-4">
-                <div class="col-md-4">
-                  <div class="feature-box">
-                    <div class="feature-icon">
-                      <i class="bi bi-people-fill"></i>
-                    </div>
-                    <h5>Community Partnership</h5>
-                    <p>Co-designing solutions with communities through interdisciplinary approaches that combine
-                      engineering, science, and social thinking.</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="feature-box">
-                    <div class="feature-icon">
-                      <i class="bi bi-lightbulb-fill"></i>
-                    </div>
-                    <h5>Innovation Driven</h5>
-                    <p>Backed by academic rigor of our faculty and ingenuity of students to create sustainable solutions
-                      aligned with national priorities.</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="feature-box">
-                    <div class="feature-icon">
-                      <i class="bi bi-shield-check"></i>
-                    </div>
-                    <h5>Transparent Implementation</h5>
-                    <p>Meticulously monitored initiatives with full transparency and accountability for measurable
-                      social impact.</p>
-                  </div>
-                </div>
+                <img src="assets/img/about/dora img.jpg" alt="IIT Kanpur CSR community initiative" class="img-fluid main-visual">
               </div>
             </div>
           </div>
+    
         </div>
-
+    
+        <!-- Centered last paragraph -->
+        <div class="about-center-text" data-aos="fade-up" data-aos-delay="400">
+          <p>
+            Join us as collaborators, mentors, and visionaries to create a future driven by academic excellence and inclusive development.
+          </p>
+        </div>
+    
       </div>
+    </section>
+    
+    <style>
+.about-center-text {
+  text-align: center;
+  max-width: 900px;
+  margin: 20px auto 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #333;
+  font-weight: 500;
+}
 
-    </section><!-- /About Section -->
- <!-----------benefits--> 
-   <!-- Call To Action Section -->
-   <section id="call-to-action" class="call-to-action section dark-background">
+.about-center-text p {
+  margin: 0;
+}
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="row align-items-lg-center">
-        <div class="col-lg-5 order-lg-2" data-aos="fade-left" data-aos-delay="200">
-          <div class="image-wrapper position-relative">
-            <div class="floating-card">
-              <i class="bi bi-shield-lock"></i>
-              <h4>Advanced Security Solutions</h4>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-            </div>
-            <img src="assets/img/misc/misc-6.webp" alt="Security Solutions" class="img-fluid main-image">
-          </div>
-        </div>
 
-        <div class="col-lg-6 offset-lg-1 order-lg-1" data-aos="fade-right" data-aos-delay="100">
-          <div class="content-area">
-            <h2>Benefits of CSR at IIT Kanpur</h2>
-            <p>Maximize your social impact while supporting transformative education and research initiatives at IIT Kanpur.</p>
-        
-            <ul class="feature-list">
-              <li>
-                <i class="bi bi-check"></i>
-                <span>100% CSR Tax Exemption (as per Govt. norms)</span>
-              </li>
-              <li>
-                <i class="bi bi-check"></i>
-                <span>Advanced Multidisciplinary R&D Ecosystem – Where innovation meets real-world solutions</span>
-              </li>
-              <li>
-                <i class="bi bi-check"></i>
-                <span>Legacy of nation-building with mission-driven, adaptable models</span>
-              </li>
-              <li>
-                <i class="bi bi-check"></i>
-                <span>Partner with a proven force for transformative change</span>
-              </li>
-              <li>
-                <i class="bi bi-check"></i>
-                <span>Transparent Implementation & Measurable Impact – Every contribution counts and is accounted for</span>
-              </li>
-            </ul>
-        
-           
-          </div>
-        </div>
-        
 
-      </div>
-
+    </style>
+    <!-- /About Section -->
+    <!-----------benefits-->
+  
+  
+<!-------newdomaindesign-->
+<section id="impact-domains" class="seconddomaindesign section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center mb-5">
+      <h2 class="domain-heading">Strategic Impact Areas</h2>
     </div>
 
-  </section><!-- /Call To Action Section -->
-
-      <!----------Projects-->
-      <section id="impactful-projects" class="impact-section">
-        <div class="container">
-          <h2 class="section-title">Impactful Projects</h2>
-      
-          <!-- Project 1 -->
-          <div class="project">
-            <div class="project-img">
-              <img src="assets/img/about/Munn Parikshak.jpeg" alt="Munh Parikshak">
-            </div>
-            <div class="project-content">
-              <h3>Munh Parikshak</h3>
-              <h4>Empowering Everyone with the Power of Timely Diagnosis.</h4>
-              <p>
-                The Indian Institute of Technology Kanpur (IITK) has developed and successfully transferred a pioneering healthcare innovation, <b>Munh Parikshak</b> — a portable device designed for the early detection of oral cancer. Developed by Prof. Jayant Kumar Singh and his team from the Department of Chemical Engineering, the device utilizes specialized lighting and an in-built camera to examine the oral cavity and instantly analyze mouth images using advanced algorithms. Based on the analysis, the condition is categorized as normal, pre-cancerous, or cancerous, with results displayed through a user-friendly smartphone application. 
-              </p>
-              <p>
-                These results are securely stored on cloud servers for remote consultations and long-term tracking. The technology has been transferred to <b>Scangenie Scientific Pvt. Ltd.</b> for large-scale deployment. As oral cancer remains one of India’s leading health concerns, especially in underserved areas, Munh Parikshak offers a low-cost, scalable solution that exemplifies IIT Kanpur’s focus on socially relevant innovation.
-              </p>
-            </div>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="domain-box">
+          <div class="domain-icon">
+            <i class="bi bi-heart-pulse-fill"></i>
           </div>
-      
-          <!-- Project 2 -->
-          <div class="project reverse">
-            <div class="project-img">
-              <img src="assets/img/about/Digital Health Stack.jpeg" alt="Digital Health Stack">
-            </div>
-            <div class="project-content">
-              <h3>Digital Health Stack</h3>
-              <h4>Transforming Healthcare Delivery through Digital Innovation</h4>
-              <p>
-                Launched in 2024 by IIT Kanpur with support from the ICICI Foundation, the <b>Digital Health Stack (DHS)</b> project bridges critical healthcare gaps in Uttar Pradesh through telemedicine, secure data integration, and AI-led solutions. By enhancing digital platforms at primary and secondary care levels, DHS is reducing the burden on tertiary hospitals and expanding access for rural populations.
-              </p>
-              <p>
-                The project has influenced state policy, piloted a scalable telemedicine system, and developed a secure <b>Health Information Exchange (HIE)</b> aligned with the Ayushman Bharat Digital Mission. DHS even built a full referral and ambulance system in just two weeks for the 2025 Maha Kumbh, benefitting thousands. With strong collaborations with NHA and DHR, it stands as a replicable model for India’s digital health infrastructure.
-              </p>
-            </div>
-          </div>
-      
-          <!-- Project 3 -->
-          <div class="project">
-            <div class="project-img">
-              <img src="assets/img/about/Wabtec.jpg" alt="Wabtec Project">
-            </div>
-            <div class="project-content">
-              <h3>Wabtec</h3>
-              <h4>Enhancing Railway Safety and Infrastructure Durability</h4>
-              <p>
-                A multidisciplinary research project at IIT Kanpur has advanced railway safety and infrastructure maintenance through innovative technologies. Using modified <b>Phased Array Ultrasonic Testing (PAUT)</b>, the team achieved high-precision detection of micro-cracks in rail sections, enabling real-time condition monitoring and reducing derailment risks.
-              </p>
-              <p>
-                In parallel, a corrosion-resistant hybrid coating using <b>MIO and SiO₂</b> was developed to extend the life of steel components such as railway wagons and bridges. These innovations promise safer transport, cost-effective maintenance, and enhanced sustainability — underscoring IIT Kanpur’s pivotal role in industrial transformation.
-              </p>
-            </div>
+          <div class="domain-info">
+            <h5>Healthcare</h5>
+            <p>Promoting accessible medical support and wellness programs for all communities.</p>
           </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="domain-box">
+          <div class="domain-icon">
+            <i class="bi bi-leaf-fill"></i>
+          </div>
+          <div class="domain-info">
+            <h5>Environment & Sustainability</h5>
+            <p>Fostering eco-conscious initiatives and renewable energy innovations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="domain-box">
+          <div class="domain-icon">
+            <i class="bi bi-mortarboard-fill"></i>
+          </div>
+          <div class="domain-info">
+            <h5>Education, Skill & Development</h5>
+            <p>Building future-ready talent through education and skill-based training.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="domain-box">
+          <div class="domain-icon">
+            <i class="bi bi-lightbulb-fill"></i>
+          </div>
+          <div class="domain-info">
+            <h5>Research & Innovation</h5>
+            <p>Encouraging cutting-edge research for technological and social advancement.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="domain-box">
+          <div class="domain-icon">
+            <i class="bi bi-people-fill"></i>
+          </div>
+          <div class="domain-info">
+            <h5>Community & Welfare</h5>
+            <p>Empowering local communities through social upliftment and welfare programs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="domain-box">
+          <div class="domain-icon">
+            <i class="bi bi-building-fill"></i>
+          </div>
+          <div class="domain-info">
+            <h5>Infrastructure</h5>
+            <p>Enhancing public and institutional infrastructure to support growth and innovation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto:wght@400;500&display=swap');
-
-.impact-section {
-  background: #ffffff;
-  padding: 50px 0;
+  .seconddomaindesign {
+  background: #faf9f8;
+  padding: 80px 0;
   font-family: 'Roboto', sans-serif;
-  color: #333;
 }
 
-.section-title {
-  font-family: 'Raleway', sans-serif;
-  font-size: 2.5rem;
-  text-align: center;
-  color: #B04B3B;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 70px;
+.seconddomaindesign .domain-heading {
+  color: #B04B34;
+  font-weight: 700;
+  font-size: 2rem;
   position: relative;
+  display: inline-block;
 }
 
-.section-title::after {
+.seconddomaindesign .domain-heading::after {
   content: "";
-  display: block;
-  width: 90px;
+  width: 70px;
   height: 3px;
-  background: #B04B3B;
-  margin: 15px auto 0;
-  border-radius: 2px;
+  background: #B04B34;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
 }
 
-.project {
+.seconddomaindesign .domain-box {
   display: flex;
-  align-items: center;
-  gap: 50px;
-  margin-bottom: 90px;
-}
-
-.project.reverse {
-  flex-direction: row-reverse;
-}
-
-.project-img {
-  flex: 1;
-}
-
-.project-img img {
-  width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.project-img img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-}
-
-.project-content {
-  flex: 1.2;
-  background: #fff;
-  padding: 40px;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #fff, #f9f2f0);
+  border: 1px solid #eee;
   border-radius: 18px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  padding: 25px 20px;
   transition: all 0.4s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  min-height: 160px;
 }
 
-.project-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+.seconddomaindesign .domain-box:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #fff, #f3e3de);
+  border-color: #B04B34;
+  box-shadow: 0 8px 25px rgba(176, 75, 52, 0.15);
 }
 
-.project-content h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.6rem;
-  color: #B04B3B;
+.seconddomaindesign .domain-icon {
+  flex-shrink: 0;
+  font-size: 2rem;
+  color: #B04B34;
+  margin-right: 18px;
+  transition: color 0.3s ease;
+}
+
+.seconddomaindesign .domain-box:hover .domain-icon {
+  color: #912f23;
+}
+
+.seconddomaindesign .domain-info h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
   margin-bottom: 8px;
 }
 
-.project-content h4 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: #7B3F32;
-  margin-bottom: 20px;
-  font-size: 1.05rem;
-}
-
-.project-content p {
+.seconddomaindesign .domain-info p {
   font-size: 0.95rem;
-  line-height: 1.7;
-  color: #444;
-  margin-bottom: 15px;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-  .project {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project.reverse {
-    flex-direction: column;
-  }
-
-  .project-img img {
-    width: 90%;
-  }
-
-  .project-content {
-    width: 95%;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .project-content {
-    padding: 25px;
-  }
-
-  .project-content h3 {
-    font-size: 1.3rem;
-  }
-
-  .project-content h4 {
-    font-size: 1rem;
-  }
-}
-
-</style>   
-<!---------main domain Areas-->   
-<section class="csr-domains-image">
-  <div class="container">
-    <h2 class="section-title">Domains</h2>
-    <div class="domains-grid">
-
-      <!-- Domain 1: Healthcare -->
-      <div class="domain-card">
-        <img src="assets/img/about/Healthcare.jpeg" alt="Healthcare">
-        <div class="overlay">
-          <h3>Healthcare</h3>
-          <p>Affordable medical technologies, preventive health awareness, and AI-driven healthcare delivery, aligned with SDG 3 and Ayushman Bharat.</p>
-        </div>
-      </div>
-
-      <!-- Domain 2: Environment -->
-      <div class="domain-card">
-        <img src="assets/img/about/Environment & Sustainability Environment & Sustainability.png" alt="Environment & Sustainability">
-        <div class="overlay">
-          <h3>Environment & Sustainability</h3>
-          <p>Water conservation, renewable energy, waste management, and eco-restoration aligned with SDG 6 & SDG 13.</p>
-        </div>
-      </div>
-
-      <!-- Domain 3: Education -->
-      <div class="domain-card">
-        <img src="assets/img/about/Education.jpg" alt="Education, Skill & Development">
-        <div class="overlay">
-          <h3>Education, Skill & Development</h3>
-          <p>Digital education, vocational training, and teacher empowerment promoting inclusive learning and skill development.</p>
-        </div>
-      </div>
-
-      <!-- Domain 4: Research -->
-      <div class="domain-card">
-        <img src="assets/img/about/Research & Innovation.jpg" alt="Research & Innovation">
-        <div class="overlay">
-          <h3>Research & Innovation</h3>
-          <p>Problem-oriented innovations, technology transfer, and community-centric solutions supporting SDG 9 and Atal Innovation Mission.</p>
-        </div>
-      </div>
-
-      <!-- Domain 5: Community -->
-      <div class="domain-card">
-        <img src="assets/img/about/Community & Welfare.jpg" alt="Community & Welfare">
-        <div class="overlay">
-          <h3>Community & Welfare</h3>
-          <p>Income generation, nutrition, sanitation, and social equity initiatives supporting SDG 1 & SDG 5 through local partnerships.</p>
-        </div>
-      </div>
-
-      <!-- Domain 6: Infrastructure -->
-      <div class="domain-card">
-        <img src="assets/img/about/Infrastructure.jpg" alt="Infrastructure">
-        <div class="overlay">
-          <h3>Infrastructure</h3>
-          <p>Clean water systems, renewable energy setups, smart classrooms, and lab upgradation aligned with SDG 11 and national programs.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<style>
-  .csr-domains-image {
-  padding: 100px 0;
-  font-family: 'Roboto', sans-serif;
-  background: #f8f6f4;
-}
-
-.section-title {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 2.7rem;
-  font-weight: 700;
-  color: #B04B3B;
-  margin-bottom: 60px;
-}
-
-.domains-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.domain-card {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  min-height: 300px; /* ensures card is tall enough for content */
-}
-
-.domain-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.domain-card:hover img {
-  transform: scale(1.08);
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 30px 25px;
-  background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.0)); /* lighter overlay */
-  color: #fff;
-  transition: background 0.4s ease;
-  height: 100%; /* overlay covers whole card for better readability */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.domain-card:hover .overlay {
-  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.0));
-}
-
-.overlay h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 12px;
-  line-height: 1.3;
-  color: #ffffff;
-}
-
-.overlay p {
-  font-size: 1rem;
-  line-height: 1.6;
-  max-height: 150px;
-  overflow: hidden;
-}
-
-/* RESPONSIVE */
-@media (max-width: 1200px) {
-  .domains-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
-  .domains-grid {
-    grid-template-columns: 1fr;
+  .seconddomaindesign {
+    padding: 60px 0;
   }
-
-  .overlay {
-    padding: 25px 20px;
+  .seconddomaindesign .domain-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-
-  .overlay h3 {
-    font-size: 1.35rem;
-  }
-
-  .overlay p {
-    font-size: 0.95rem;
+  .seconddomaindesign .domain-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
 </style>
+    <!---------main project Area-->
 
+    <!--------compact area-->
+    <section id="impactful-projects" class="compact-highlight-section">
+      <div class="container">
+        <h2 class="section-title">Transformative CSR Projects
+        </h2>
 
-
-<!-- Font Awesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-      
-
-   
-
-    <!-- Features 2 Section -->
-    <section id="features-2" class="features-2 section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="bi bi-app-indicator"></i>
-              </div>
-              <h3>Intuitive Dashboard Interface</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua ut enim ad minim veniam.</p>
-              <ul class="feature-benefits">
-                <li><i class="bi bi-check-circle-fill"></i> Real-time data visualization</li>
-                <li><i class="bi bi-check-circle-fill"></i> Customizable widgets</li>
-                <li><i class="bi bi-check-circle-fill"></i> Interactive reports</li>
-              </ul>
-              <div class="feature-image">
-                <img src="assets/img/features/features-1.webp" alt="Dashboard Interface" class="img-fluid"
-                  loading="lazy">
-              </div>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-project="munh">
+            <div class="project-img">
+              <img src="assets/img/about/p1.jpg" alt="Munh Parikshak">
+            </div>
+            <div class="project-info">
+              <h3>Munh Parikshak</h3>
+              <p>Empowering Everyone with the Power of Timely Diagnosis</p>
+              <button class="read-more-btn">Read More</button>
             </div>
           </div>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-card highlighted">
-              <div class="feature-icon">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <h3>Advanced Analytics Tools</h3>
-              <p>Mauris blandit aliquet elit eget tincidunt nibh pulvinar a cras ultricies ligula sed magna dictum porta
-                mauris blandit aliquet elit eget tincidunt.</p>
-              <ul class="feature-benefits">
-                <li><i class="bi bi-check-circle-fill"></i> Predictive analysis</li>
-                <li><i class="bi bi-check-circle-fill"></i> Custom reporting</li>
-                <li><i class="bi bi-check-circle-fill"></i> Data exploration</li>
-              </ul>
-              <div class="feature-image">
-                <img src="assets/img/features/features-2.webp" alt="Analytics Tools" class="img-fluid" loading="lazy">
-              </div>
+          <!-- Project 2 -->
+          <div class="project-card" data-project="dhs">
+            <div class="project-img">
+              <img src="assets/img/csrimages/pro2.png" alt="Digital Health Stack">
+            </div>
+            <div class="project-info">
+              <h3>Digital Health Stack</h3>
+              <p>Transforming Healthcare Delivery through Digital Innovation
+              </p>
+              <button class="read-more-btn">Read More</button>
             </div>
           </div>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <h3>Enterprise-Grade Security</h3>
-              <p>Nulla porttitor accumsan tincidunt praesent sapien massa convallis a pellentesque nec egestas non nisi
-                proin eget tortor risus donec sollicitudin.</p>
-              <ul class="feature-benefits">
-                <li><i class="bi bi-check-circle-fill"></i> End-to-end encryption</li>
-                <li><i class="bi bi-check-circle-fill"></i> Advanced access control</li>
-                <li><i class="bi bi-check-circle-fill"></i> Compliance monitoring</li>
-              </ul>
-              <div class="feature-image">
-                <img src="assets/img/features/features-3.webp" alt="Security Features" class="img-fluid" loading="lazy">
-              </div>
+          <!-- Project 3 -->
+          <div class="project-card" data-project="wabtec">
+            <div class="project-img">
+              <img src="assets/img/csrimages/pro3.png" alt="Wabtec">
+            </div>
+            <div class="project-info">
+              <h3>Wabtec</h3>
+              <p>Enhancing Railway Safety and Infrastructure Durability</p>
+              <button class="read-more-btn">Read More</button>
             </div>
           </div>
         </div>
-
-        <div class="feature-testimonial" data-aos="fade-up" data-aos-delay="300">
-          <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="zoom-in">
-              <div class="testimonial-image">
-                <img src="assets/img/features/features-4.webp" alt="Testimonial" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="testimonial-content">
-                <div class="quote-icon">
-                  <i class="bi bi-quote"></i>
-                </div>
-                <p>Curabitur arcu erat accumsan id imperdiet et porttitor at sem. Vivamus magna justo lacinia eget
-                  consectetur sed convallis at tellus. Curabitur aliquet quam id dui posuere blandit.</p>
-                <div class="testimonial-author">
-                  <h4>Jennifer Austin</h4>
-                  <span>Product Director at TechCorp</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-    </section><!-- /Features 2 Section -->
-
-  
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
-
-      <div class="container">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt=""></div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
-    <section id="partners" class="partners section">
-      <div class="container">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 4000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": { "slidesPerView": 2, "spaceBetween": 20 },
-                "480": { "slidesPerView": 3, "spaceBetween": 30 },
-                "640": { "slidesPerView": 4, "spaceBetween": 40 },
-                "992": { "slidesPerView": 6, "spaceBetween": 60 }
-              }
-            }
-          </script>
-    
-          <div class="swiper-wrapper align-items-center" id="partner-logos"></div>
-          <div class="swiper-pagination"></div>
+      <!-- Popup Modal -->
+      <div class="highlight-popup" id="popup">
+        <div class="popup-content">
+          <span class="close-popup">&times;</span>
+          <div id="popup-details"></div>
         </div>
       </div>
     </section>
+
+    <!-- ===== CSS ===== -->
+    <style>
+
+      .compact-highlight-section {
+        background: linear-gradient(135deg, #fff 50%, #f9f3f2 50%);
+        padding: 60px 0;
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+      }
+
+      .section-title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        color: #B04B3B;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      /* Grid Layout */
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+      }
+
+      .project-card {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+      }
+
+      .project-img img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+
+      .project-card:hover .project-img img {
+        transform: scale(1.03);
+      }
+
+      .project-info {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .project-info h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.3rem;
+        color: #B04B3B;
+        margin-bottom: 8px;
+      }
+
+      .project-info p {
+        color: #555;
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+
+      .read-more-btn {
+        background: linear-gradient(135deg, #B04B3B, #D2694B);
+        color: #fff;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+
+      .read-more-btn:hover {
+        background: linear-gradient(135deg, #953B2E, #B04B3B);
+        transform: scale(1.05);
+      }
+
+      /* Popup */
+      .highlight-popup {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(5px);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+      }
+
+      .popup-content {
+        background: #fff;
+        padding: 30px;
+        border-radius: 14px;
+        width: 90%;
+        max-width: 700px;
+        max-height: 80vh;
+        overflow-y: auto;
+        position: relative;
+        animation: fadeIn 0.4s ease;
+      }
+
+      .close-popup {
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        font-size: 1.8rem;
+        color: #B04B3B;
+        cursor: pointer;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .section-title {
+          font-size: 1.8rem;
+        }
+
+        .project-info {
+          padding: 15px;
+        }
+
+        .project-info h3 {
+          font-size: 1.2rem;
+        }
+
+        .project-info p {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+
+    <!-- ===== JavaScript ===== -->
     <script>
-      const partners = [
-        "Adani Enterprises Limited",
-        "Aeron Systems Pvt. Ltd.",
-        "AIA Engineering Ltd.",
-        "Alkyl Amines Chemicals Limited",
-        "AlphaGrep Securities Pvt Ltd",
-        "ANSYS Software Private Limited",
-        "Apollo Heat Exchangers Pvt. Ltd.",
-        "Audify Tech Private Limited",
-        "Bharat Forge Ltd.",
-        "Bright 4 Wheel Sales Private Limited",
-        "Citadel Securities India Markets Private Limited",
-        "Citibank N.A.",
-        "Continental Belting Pvt Ltd",
-        "CREDEX TECHNOLOGY PRIVATE LIMITED",
-        "CSI Engineering Software Pvt. Ltd.",
-        "Faiveley Transport Rail Technologies India Pvt. Ltd.",
-        "Fashion Suitings Private Limited",
-        "Frontier Alloy Steel Ltd",
-        "HDFC Bank",
-        "Hexa Tours And Travels Private Limited",
-        "Hindon Filters Pvt. Ltd.",
-        "Humboldt Wedag India Private Limited",
-        "IBM India Pvt. Ltd.",
-        "ICICI Foundation For Inclusive Growth",
-        "IPM India Wholesale Trading Private Limited",
-        "ITC Limited",
-        "J K Cement Ltd.",
-        "J. K. Fenner (India) Limited",
-        "Khanna and Khanna Limited",
-        "Kotak Mahindra Bank Ltd.",
-        "Logic Fruit Technologies Private Limited",
-        "MacDermid Alpha Electronics Solutions India Private Limited",
-        "My Home Industries Pvt Ltd",
-        "My Home Power Consultancy Services Pvt Ltd",
-        "Nmtronics (India) Private Limited",
-        "PN International Pvt. Ltd.",
-        "PNC Infratech Ltd.",
-        "Portescap India Pvt. Ltd.",
-        "Prachi Leathers Pvt. Ltd.",
-        "Pradeep Metals Limited",
-        "Qualtech Consultants Pvt. Ltd.",
-        "Rahman Industries Limited",
-        "Raramuri Technology Pvt. Ltd.",
-        "REC Foundation",
-        "RIICO Limited",
-        "Rimjhim Ispat Ltd.",
-        "Sahasra Electronics Pvt. Ltd.",
-        "Saraswati Heart Care & Research Centre Pvt Ltd",
-        "Suraj Logistix Pvt. Ltd.",
-        "TCS Fellowship",
-        "Tellapur Technocity Private Limited",
-        "Tower Research Capital Markets India Private Limited",
-        "TVM Signalling And Transportation Systems Pvt. Ltd.",
-        "ZN Tech Solutions Pvt. Ltd.",
-        "Zopsmart Technology Pvt. Ltd."
-      ];
-    
-      const logoContainer = document.getElementById("partner-logos");
-    
-      partners.forEach((name, index) => {
-        const slide = document.createElement("div");
-        slide.className = "swiper-slide text-center";
-        slide.innerHTML = `
-          <div class="partner-card">
-            <img src="assets/img/partners/partner-${index + 1}.webp" class="img-fluid mb-2" alt="${name}">
-            <p class="partner-name">${name}</p>
-          </div>
-        `;
-        logoContainer.appendChild(slide);
+      const projectData = {
+        munh: `
+      <h3>Munh Parikshak</h3>
+      <h4>Empowering Everyone with the Power of Timely Diagnosis</h4>
+      <p>Developed by <b>Prof. Jayant Kumar Singh</b> and his team at <b>IIT Kanpur</b>, Munh Parikshak is a portable device for the early detection of oral cancer. The device uses specialized lighting and an in-built camera to capture images of the oral cavity, which are instantly analyzed with advanced algorithms and displayed through a smartphone application. Results are also stored securely on cloud servers, enabling remote consultations and long-term tracking.</p>
+  
+      <ul>
+        <li>Categorizes conditions as normal, pre-cancerous, or cancerous in real time</li>
+        <li>Accessible via a user-friendly smartphone app</li>
+        <li>Affordable, scalable, and suitable for self-screening or healthcare professionals</li>
+        <li>Technology transferred to <b>Scangenie Scientific Pvt. Ltd.</b> for wide adoption</li>
+      </ul>
+    `,
+
+        dhs: `
+      <h3>Digital Health Stack (DHS)</h3>
+      <h4>Transforming Healthcare Delivery through Digital Innovation</h4>
+      <p>Launched in <b>2024</b> with support from the <b>ICICI Foundation</b>, the DHS project bridges healthcare gaps in Uttar Pradesh through telemedicine, secure data integration, and AI-led solutions. By strengthening digital platforms at primary and secondary care levels, DHS:</p>
+  
+      <ul>
+        <li>Reduces the burden on tertiary hospitals and expands access for rural populations</li>
+        <li>Influenced state policy by piloting a scalable telemedicine system</li>
+        <li>Developed a secure Health Information Exchange aligned with the <b>Ayushman Bharat Digital Mission</b></li>
+      </ul>
+  
+      <p>During the <b>2025 Maha Kumbh</b>, DHS implemented a fully functional referral and ambulance system in just two weeks, benefiting thousands.</p>
+    `,
+
+        wabtec: `
+      <h3>WABTEC Project</h3>
+      <h4>Enhancing Railway Safety and Infrastructure Durability</h4>
+      <p>A multidisciplinary project at <b>IIT Kanpur</b> has advanced railway safety through innovations in monitoring and materials. Using modified <b>Phased Array Ultrasonic Testing (PAUT)</b>, researchers achieved high-precision detection of micro-cracks (as small as 2–3 mm) in critical rail sections, enabling real-time condition monitoring and reducing derailment risks.</p>
+  
+      <ul>
+        <li>High-precision PAUT for micro-crack detection</li>
+        <li>Real-time rail condition monitoring</li>
+        <li>Corrosion-resistant hybrid coating for wagons and bridges</li>
+        <li>Longer service life and lower maintenance costs</li>
+      </ul>
+  
+      <p>By combining cutting-edge research with practical application, the project contributes to safer and more sustainable railway infrastructure.</p>
+    `
+      };
+
+      // Popup logic
+      const readButtons = document.querySelectorAll(".read-more-btn");
+      const popup = document.getElementById("popup");
+      const popupDetails = document.getElementById("popup-details");
+      const closePopup = document.querySelector(".close-popup");
+
+      readButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const projectKey = btn.closest(".project-card").dataset.project;
+          popupDetails.innerHTML = projectData[projectKey];
+          popup.style.display = "flex";
+        });
+      });
+
+      closePopup.addEventListener("click", () => popup.style.display = "none");
+      window.addEventListener("click", e => {
+        if (e.target === popup) popup.style.display = "none";
       });
     </script>
-<style>
-  .partner-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.partner-card img {
-  max-height: 70px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
 
-.partner-card img:hover {
-  transform: scale(1.05);
-}
 
-.partner-name {
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-align: center;
-  color: #333;
-  margin-top: 5px;
-}
 
-</style>        
-    <!-- Testimonials Section -->
-   <!-- Include Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-<!-- Include Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- Include Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 
-<section id="testimonials" class="testimonials section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <span class="description-title">Testimonials</span>
-    <h2>What Our Partners Say</h2>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-
-    <!-- Swiper Container with Custom Navigation -->
-    <div class="testimonial-slider-container" data-aos="fade-up">
-      
-      <!-- Custom Navigation Arrows -->
-      <div class="custom-swiper-nav">
-        <div class="swiper-button-prev-custom">
-          <i class="bi bi-chevron-left"></i>
-        </div>
-        <div class="swiper-button-next-custom">
-          <i class="bi bi-chevron-right"></i>
-        </div>
-      </div>
-
-      <!-- Swiper -->
-      <div class="swiper testimonial-slider">
-        <div class="swiper-wrapper">
-
-          <!-- Testimonial 1 -->
-          <div class="swiper-slide">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Vertiv takes pride in associating with IIT Kanpur and Shiksha Sopon for making a difference in the lives of the underprivileged in the country through CSR initiatives. Education, sustainability, and energy are the themes for Vertiv for our CSR funding, and we look forward to further partnership with IIT Kanpur across these tracks.</p>
-              <div class="client-info">
-                <div class="client-details">
-                  <h3>Dr. A. S. Prasad</h3>
-                  <span class="position">General Manager, Integrated Rack Solutions (VERTIV)</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 2 -->
-          <div class="swiper-slide">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>IIT Kanpur's unwavering focus on social responsibility, deep understanding of the community's needs, and commitment to creating meaningful change have been invaluable in propelling our collaborative journey for CSR activities.</p>
-              <div class="client-info">
-                <div class="client-details">
-                  <h3>Mr. Rafiq Somani</h3>
-                  <span class="position">Area VP India & ASEAN Sales (Ansys)</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="swiper-slide">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>This collaboration with IIT Kanpur is a testament to a shared vision of advancing healthcare solutions through cutting-edge research. Together, we aim to explore new frontiers in medical technology, blending Portescap's industry expertise with the academic rigor and innovative spirit of IIT Kanpur.</p>
-              <div class="client-info">
-                <div class="client-details">
-                  <h3>Mr. Dheeraj Saxena</h3>
-                  <span class="position">Director: Global Engineering, Portescap</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 4 -->
-          <div class="swiper-slide">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Our journey with IIT Kanpur has been very encouraging, not just in terms of scientific rigor but also due to the Institute's strong understanding of Industry-Academia collaboration, resulting in jointly achieving milestones on time and enhancing application development outcomes.</p>
-              <div class="client-info">
-                <div class="client-details">
-                  <h3>Dr. Richard Lobo</h3>
-                  <span class="position">Global Head Business Excellence, Tata Chemicals Ltd.</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 5 -->
-          <div class="swiper-slide">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Through CSR funding, Ansys has enabled the IITK team to promote systematic research among postgraduate students in science, technology, engineering, and medicine aimed at advancing Sustainable Development Goals.</p>
-              <div class="client-info">
-                <div class="client-details">
-                  <h3>Mr. Rafiq Somani</h3>
-                  <span class="position">Area VP India & ASEAN Sales (Ansys)</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 6 -->
-          <div class="swiper-slide">
-            <div class="testimonial-content">
-              <div class="quote-pattern">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>We have experienced the credo of IIT Kanpur – "Tamso Maa Jyotirgamaya" (Lead me from darkness to light) – and look forward to continuing our partnership in new areas of disruptive innovation.</p>
-              <div class="client-info">
-                <div class="client-details">
-                  <h3>Dr. Richard Lobo</h3>
-                  <span class="position">Chief Ethics Counselor, Tata Chemicals Ltd.</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Swiper Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<style>
-.testimonials {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 80px 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.description-title {
-  color: #B04B3B;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.section-title h2 {
-  color: #212529;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.section-title p {
-  color: #6c757d;
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.testimonial-slider-container {
-  position: relative;
-  padding: 0 50px;
-}
-
-.custom-swiper-nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  z-index: 10;
-  pointer-events: none;
-}
-
-.swiper-button-prev-custom,
-.swiper-button-next-custom {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  color: #B04B3B;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  pointer-events: all;
-}
-
-.swiper-button-prev-custom {
-  left: -25px;
-}
-
-.swiper-button-next-custom {
-  right: -25px;
-}
-
-.swiper-button-prev-custom:hover,
-.swiper-button-next-custom:hover {
-  background: #B04B3B;
-  color: white;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.swiper-button-prev-custom i,
-.swiper-button-next-custom i {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.testimonial-slider {
-  padding: 20px 0 60px 0;
-  position: relative;
-}
-
-.swiper-slide {
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.testimonial-content {
-  background: white;
-  border-radius: 15px;
-  padding: 40px 30px 30px 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  height: 100%;
-  position: relative;
-  transition: all 0.3s ease;
-  border-top: 4px solid #B04B3B;
-  display: flex;
-  flex-direction: column;
-}
-
-.testimonial-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-.quote-pattern {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  color: #f8f9fa;
-  font-size: 3rem;
-  z-index: 1;
-}
-
-.quote-pattern i {
-  color: #f8f9fa;
-}
-
-.testimonial-content p {
-  color: #495057;
-  line-height: 1.7;
-  font-size: 1rem;
-  margin-bottom: 25px;
-  position: relative;
-  z-index: 2;
-  flex-grow: 1;
-}
-
-.client-info {
-  display: flex;
-  align-items: center;
-  margin-top: auto;
-}
-
-.client-details h3 {
-  color: #212529;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.client-details .position {
-  color: #B04B3B;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-/* Swiper Pagination */
-.swiper-pagination {
-  bottom: 0 !important;
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: #dee2e6;
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-
-.swiper-pagination-bullet-active {
-  background: #B04B3B;
-  transform: scale(1.2);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .testimonials {
-    padding: 60px 0;
-  }
-  
-  .section-title h2 {
-    font-size: 2rem;
-  }
-  
-  .section-title p {
-    font-size: 1rem;
-  }
-  
-  .testimonial-slider-container {
-    padding: 0 40px;
-  }
-  
-  .swiper-button-prev-custom,
-  .swiper-button-next-custom {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .swiper-button-prev-custom {
-    left: -20px;
-  }
-  
-  .swiper-button-next-custom {
-    right: -20px;
-  }
-  
-  .testimonial-content {
-    padding: 30px 25px 25px 25px;
-  }
-}
-
-@media (max-width: 576px) {
-  .testimonial-slider-container {
-    padding: 0 30px;
-  }
-  
-  .swiper-button-prev-custom,
-  .swiper-button-next-custom {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .swiper-button-prev-custom {
-    left: -15px;
-  }
-  
-  .swiper-button-next-custom {
-    right: -15px;
-  }
-  
-  .swiper-button-prev-custom i,
-  .swiper-button-next-custom i {
-    font-size: 1rem;
-  }
-  
-  .testimonial-content {
-    padding: 25px 20px 20px 20px;
-  }
-  
-  .quote-pattern {
-    top: 15px;
-    right: 20px;
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .testimonial-slider-container {
-    padding: 0 20px;
-  }
-  
-  .swiper-button-prev-custom,
-  .swiper-button-next-custom {
-    display: none;
-  }
-}
-</style>
-
-<!-- Include Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const testimonialSwiper = new Swiper('.testimonial-slider', {
-    loop: true,
-    speed: 800,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next-custom',
-      prevEl: '.swiper-button-prev-custom',
-    },
-    slidesPerView: 1,
-    spaceBetween: 30,
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-    grabCursor: true,
-    effect: 'slide',
-  });
-});
-</script>
-
-<style>
-.testimonials {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 80px 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.description-title {
-  color: #B04B3B;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.section-title h2 {
-  color: #212529;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.section-title p {
-  color: #6c757d;
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.testimonial-slider {
-  padding: 20px 0 60px 0;
-  position: relative;
-}
-
-.swiper-slide {
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.testimonial-content {
-  background: white;
-  border-radius: 15px;
-  padding: 40px 30px 30px 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  height: 100%;
-  position: relative;
-  transition: all 0.3s ease;
-  border-top: 4px solid #B04B3B;
-  display: flex;
-  flex-direction: column;
-}
-
-.testimonial-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-.quote-pattern {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  color: #f8f9fa;
-  font-size: 3rem;
-  z-index: 1;
-}
-
-.quote-pattern i {
-  color: #f8f9fa;
-}
-
-.testimonial-content p {
-  color: #495057;
-  line-height: 1.7;
-  font-size: 1rem;
-  margin-bottom: 25px;
-  position: relative;
-  z-index: 2;
-  flex-grow: 1;
-}
-
-.client-info {
-  display: flex;
-  align-items: center;
-  margin-top: auto;
-}
-
-.client-details h3 {
-  color: #212529;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.client-details .position {
-  color: #B04B3B;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-/* Swiper Navigation */
-.swiper-button-next,
-.swiper-button-prev {
-  background: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  color: #B04B3B;
-  transition: all 0.3s ease;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background: #B04B3B;
-  color: white;
-  transform: scale(1.1);
-}
-
-/* Swiper Pagination */
-.swiper-pagination {
-  bottom: 0 !important;
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: #dee2e6;
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-
-.swiper-pagination-bullet-active {
-  background: #B04B3B;
-  transform: scale(1.2);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .testimonials {
-    padding: 60px 0;
-  }
-  
-  .section-title h2 {
-    font-size: 2rem;
-  }
-  
-  .section-title p {
-    font-size: 1rem;
-  }
-  
-  .testimonial-content {
-    padding: 30px 25px 25px 25px;
-  }
-  
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .testimonial-content {
-    padding: 25px 20px 20px 20px;
-  }
-  
-  .quote-pattern {
-    top: 15px;
-    right: 20px;
-    font-size: 2.5rem;
-  }
-}
-</style>
-
-<!-- Include Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const testimonialSwiper = new Swiper('.testimonial-slider', {
-    loop: true,
-    speed: 800,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    slidesPerView: 1,
-    spaceBetween: 30,
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-    grabCursor: true,
-    effect: 'slide',
-  });
-});
-</script>
-<!-- Include Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-<script>
-  const testimonialSwiper = new Swiper('.testimonial-slider', {
-    loop: true,
-    speed: 800,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    slidesPerView: 1,
-    spaceBetween: 30,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-  });
-</script>
-<!-- /Testimonials Section -->
-
-    <!-- Stats Section -->
-    <!-- <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="main-headline">Driving Excellence Through Innovation</h3>
-            <p class="main-description">Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna.
-              Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.</p>
-
-            <div class="achievement-badge" data-aos="zoom-in" data-aos-delay="300">
-              <div class="achievement-content">
-                <div class="achievement-icon">
-                  <i class="bi bi-trophy-fill"></i>
-                </div>
-                <div class="achievement-details">
-                  <div class="achievement-title">Industry Leader</div>
-                  <div class="achievement-subtitle">Recognized by 85+ industry experts</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="stats-grid">
-          <div class="row g-4">
-            <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <i class="bi bi-people-fill"></i>
-                </div>
-                <div class="stat-content">
-                  <div class="stat-number">
-                    <span data-purecounter-start="0" data-purecounter-end="285" data-purecounter-duration="2"
-                      class="purecounter"></span>K+
-                  </div>
-                  <div class="stat-label">Happy Customers</div>
-                  <div class="stat-growth">
-                    <i class="bi bi-arrow-up"></i>
-                    <span>+12% this year</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="stat-item featured">
-                <div class="stat-icon">
-                  <i class="bi bi-graph-up-arrow"></i>
-                </div>
-                <div class="stat-content">
-                  <div class="stat-number">
-                    <span data-purecounter-start="0" data-purecounter-end="98.5" data-purecounter-duration="2"
-                      class="purecounter"></span>%
-                  </div>
-                  <div class="stat-label">Success Rate</div>
-                  <div class="stat-growth">
-                    <i class="bi bi-arrow-up"></i>
-                    <span>+5% improvement</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <i class="bi bi-award-fill"></i>
-                </div>
-                <div class="stat-content">
-                  <div class="stat-number">
-                    <span data-purecounter-start="0" data-purecounter-end="47" data-purecounter-duration="2"
-                      class="purecounter"></span>
-                  </div>
-                  <div class="stat-label">Awards Won</div>
-                  <div class="stat-growth">
-                    <i class="bi bi-arrow-up"></i>
-                    <span>+8 this quarter</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="stat-item">
-                <div class="stat-icon">
-                  <i class="bi bi-globe"></i>
-                </div>
-                <div class="stat-content">
-                  <div class="stat-number">
-                    <span data-purecounter-start="0" data-purecounter-end="156" data-purecounter-duration="2"
-                      class="purecounter"></span>
-                  </div>
-                  <div class="stat-label">Global Partners</div>
-                  <div class="stat-growth">
-                    <i class="bi bi-arrow-up"></i>
-                    <span>+23 new partners</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section> -->
-    <!-- /Stats Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Domain</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-          <!-- Left Column: Intro Text -->
-          <div class="col-lg-6">
-            <div class="intro-content" data-aos="fade-right" data-aos-delay="100">
-              <div class="section-badge mb-3" data-aos="zoom-in" data-aos-delay="50">
-                <i class="bi bi-globe2"></i>
-                <span>CSR DOMAINS</span>
-              </div>
-              <h2 class="section-heading mb-4">Driving Impact Across Key Social Domains</h2>
-              <p class="section-description mb-4">
-                At IIT Kanpur, our CSR initiatives focus on creating sustainable impact in Healthcare, Environment, Education, Research, Community Welfare, and Infrastructure. Through innovation, collaboration, and community engagement, we transform ideas into actionable programs that benefit society and align with national development goals.
-              </p>
-               
-            </div>
-          </div>
-        
-          <!-- Right Column: Hero Image -->
-          <div class="col-lg-6">
-            <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
-              <img src="assets/img/about/csr.jpg" alt="CSR Initiatives" class="img-fluid rounded">
-            </div>
-          </div>
-        </div>
-        
-
-        <div class="services-grid mt-5">
-          <div class="row g-4">
-        
-            <!-- Domain 1: Healthcare -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-card">
-                <div class="card-number">
-                  <span>01</span>
-                </div>
-                <div class="card-content">
-                  <h5 class="service-title">
-                    <a href="#">Healthcare</a>
-                  </h5>
-                  <p class="service-description">
-                    IIT Kanpur supports community health through affordable medical technologies, preventive health awareness, and accessible healthcare delivery models. Initiatives include non-invasive portable devices, diagnostic tools, and AI-driven health monitoring for underserved regions. Aligned with SDG 3 and Ayushman Bharat, these efforts strengthen resilient public health infrastructure.
-                  </p>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Domain 2: Environment & Sustainability -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-card">
-                <div class="card-number">
-                  <span>02</span>
-                </div>
-                <div class="card-content">
-                  <h5 class="service-title">
-                    <a href="#">Environment & Sustainability</a>
-                  </h5>
-                  <p class="service-description">
-                    IIT Kanpur promotes water conservation, renewable energy, waste management, and climate resilience. Technologies for greywater reuse, sustainable agriculture, and eco-restoration address critical ecological challenges. Aligned with SDG 6, SDG 13, and national missions like Jal Shakti Abhiyan, IITK contributes to long-term environmental stewardship.
-                  </p>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Domain 3: Education, Skill & Development -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-card">
-                <div class="card-number">
-                  <span>03</span>
-                </div>
-                <div class="card-content">
-                  <h5 class="service-title">
-                    <a href="#">Education, Skill & Development</a>
-                  </h5>
-                  <p class="service-description">
-                    Inclusive learning through digital education, vocational training, and teacher empowerment initiatives. Supporting rural education via interactive content and customized pedagogy, and skill development in trades like tailoring, electronics, and computer literacy. Aligned with SDG 4 and Skill India Mission, empowering lifelong learning and self-reliance.
-                  </p>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Domain 4: Research & Innovation -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-card">
-                <div class="card-number">
-                  <span>04</span>
-                </div>
-                <div class="card-content">
-                  <h5 class="service-title">
-                    <a href="#">Research & Innovation</a>
-                  </h5>
-                  <p class="service-description">
-                    IIT Kanpur drives socially relevant research through problem-oriented innovation. CSR-enabled labs and incubators support early-stage ideas addressing grassroots challenges. Technology transfer and capacity building foster community-centric solutions aligned with SDG 9 and the Atal Innovation Mission.
-                  </p>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Domain 5: Community & Welfare -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-card">
-                <div class="card-number">
-                  <span>05</span>
-                </div>
-                <div class="card-content">
-                  <h5 class="service-title">
-                    <a href="#">Community & Welfare</a>
-                  </h5>
-                  <p class="service-description">
-                    Focused on improving life in rural and peri-urban areas through self-help groups, farmer clusters, and artisan support. Initiatives promote income generation, nutrition, sanitation, and social equity, aligned with SDG 1, SDG 5, and Deendayal Antyodaya Yojana.
-                  </p>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Domain 6: Infrastructure -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-card">
-                <div class="card-number">
-                  <span>06</span>
-                </div>
-                <div class="card-content">
-                  <h5 class="service-title">
-                    <a href="#">Infrastructure</a>
-                  </h5>
-                  <p class="service-description">
-                    Supporting rural and semi-urban infrastructure with clean water systems, renewable energy setups, smart classrooms, and lab upgrades. Projects are need-assessed and community-driven, aligned with SDG 11, PM Awas Yojana, and Swachh Bharat Mission.
-                  </p>
-                </div>
-              </div>
-            </div>
-        
-          </div>
-        </div>
-        
-
-      </div>
-
-    </section><!-- /Services Section -->
-<!------------------trusted partners-->
 
    
+    <!----------logos-->
+    <section id="partners" class="logo-section bg-light">
+      <div class="container text-center">
+        <h2 class="section-title">Our Partners</h2>
+
+        <div class="logo-grid">
+          <!-- Replace image paths below -->
+          <div class="logo-item"><img src="assets/img/logo/Adani.png" alt="Logo 1"></div>
+          <div class="logo-item"><img src="assets/img/logo/Aeron2.png" alt="Logo 2"></div>
+          <div class="logo-item"><img src="assets/img/logo/AIA3.png" alt="Logo 3"></div>
+          <div class="logo-item"><img src="assets/img/logo/Alkyl4.png" alt="Logo 4"></div>
+          <div class="logo-item"><img src="assets/img/logo/ANSYS6.png" alt="Logo 5"></div>
+          <div class="logo-item"><img src="assets/img/logo/6.png" alt="Logo 6"></div>
+          <div class="logo-item"><img src="assets/img/logo/7.png" alt="Logo 7"></div>
+          <div class="logo-item"><img src="assets/img/logo/8.png" alt="Logo 8"></div>
+          <div class="logo-item"><img src="assets/img/logo/9.png" alt="Logo 9"></div>
+          <div class="logo-item"><img src="assets/img/logo/10.png" alt="Logo 10"></div>
+          <div class="logo-item"><img src="assets/img/logo/11.png" alt="Logo 11"></div>
+          <div class="logo-item"><img src="assets/img/logo/12.png" alt="Logo 12"></div>
+          <div class="logo-item"><img src="assets/img/logo/13.png" alt="Logo 13"></div>
+          <div class="logo-item"><img src="assets/img/logo/14.png" alt="Logo 14"></div>
+          <div class="logo-item"><img src="assets/img/logo/16.png" alt="Logo 15"></div>
+          <div class="logo-item"><img src="assets/img/logo/17.png" alt="Logo 16"></div>
+          <div class="logo-item"><img src="assets/img/logo/18.png" alt="Logo 17"></div>
+          <div class="logo-item"><img src="assets/img/logo/20.png" alt="Logo 18"></div>
+          <div class="logo-item"><img src="assets/img/logo/166.png" alt="Logo 19"></div>
+          <div class="logo-item"><img src="assets/img/logo/21.png" alt="Logo 21"></div>
+          <div class="logo-item"><img src="assets/img/logo/22.png" alt="Logo 22"></div>
+          <div class="logo-item"><img src="assets/img/logo/23.png" alt="Logo 23"></div>
+          <div class="logo-item"><img src="assets/img/logo/24.png" alt="Logo 24"></div>
+          <div class="logo-item"><img src="assets/img/logo/25.png" alt="Logo 25"></div>
+          <div class="logo-item"><img src="assets/img/logo/26.png" alt="Logo 26"></div>
+          <div class="logo-item"><img src="assets/img/logo/27.png" alt="Logo 27"></div>
+          <div class="logo-item"><img src="assets/img/logo/28.png" alt="Logo 28"></div>
+          <div class="logo-item"><img src="assets/img/logo/29.png" alt="Logo 29"></div>
+          <div class="logo-item"><img src="assets/img/logo/30.png" alt="Logo 30"></div>
+          <div class="logo-item"><img src="assets/img/logo/31.png" alt="Logo 31"></div>
+          <div class="logo-item"><img src="assets/img/logo/32.png" alt="Logo 32"></div>
+          <div class="logo-item"><img src="assets/img/logo/33.png" alt="Logo 33"></div>
+          <div class="logo-item"><img src="assets/img/logo/34.png" alt="Logo 34"></div>
+          <div class="logo-item"><img src="assets/img/logo/35.png" alt="Logo 35"></div>
+          <div class="logo-item"><img src="assets/img/logo/36.png" alt="Logo 36"></div>
+          <div class="logo-item"><img src="assets/img/logo/37.png" alt="Logo 37"></div>
+          <div class="logo-item"><img src="assets/img/logo/38.png" alt="Logo 38"></div>
+          <div class="logo-item"><img src="assets/img/logo/39.png" alt="Logo 39"></div>
+          <div class="logo-item"><img src="assets/img/logo/40.png" alt="Logo 40"></div>
+          <div class="logo-item"><img src="assets/img/logo/41.png" alt="Logo 41"></div>
+          <div class="logo-item"><img src="assets/img/logo/42.png" alt="Logo 42"></div>
+          <div class="logo-item"><img src="assets/img/logo/43.png" alt="Logo 43"></div>
+          <div class="logo-item"><img src="assets/img/logo/44.png" alt="Logo 44"></div>
+          <div class="logo-item"><img src="assets/img/logo/45.png" alt="Logo 45"></div>
+          <div class="logo-item"><img src="assets/img/logo/46.png" alt="Logo 46"></div>
+          <div class="logo-item"><img src="assets/img/logo/47.png" alt="Logo 47"></div>
+          <div class="logo-item"><img src="assets/img/logo/48.png" alt="Logo 48"></div>
+          <div class="logo-item"><img src="assets/img/logo/50.png" alt="Logo 50"></div>
+          <div class="logo-item"><img src="assets/img/logo/51.png" alt="Logo 51"></div>
+          <div class="logo-item"><img src="assets/img/logo/52.png" alt="Logo 52"></div>
+          <div class="logo-item"><img src="assets/img/logo/53.png" alt="Logo 53"></div>
+          <div class="logo-item"><img src="assets/img/logo/54.png" alt="Logo 54"></div>
+          <div class="logo-item"><img src="assets/img/logo/55.png" alt="Logo 55"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- Continue up to logo55 -->
+        </div>
+
+        <button id="toggleBtn" class="view-more">View More</button>
+      </div>
+    </section>
+
+    <style>
+      /* Section Base */
+      .logo-section {
+        padding: 80px 0;
+        background: #ffffff;
+      }
+
+      .section-title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #B04B34;
+        margin-bottom: 40px;
+      }
+
+      /* Grid Layout */
+      .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 30px;
+        justify-items: center;
+      }
+
+      .logo-item {
+        width: 150px;
+        height: 150px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .logo-item img {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+
+      /* Hover Effect */
+      .logo-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      .logo-item:hover img {
+        transform: scale(1.05);
+      }
+
+      /* View More Button */
+      .view-more {
+        margin-top: 40px;
+        background: linear-gradient(135deg, #B04B34, #D65A47);
+        color: #fff;
+        border: none;
+        padding: 12px 30px;
+        font-size: 1rem;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+
+      .view-more:hover {
+        background: linear-gradient(135deg, #9A3E2B, #C14E3D);
+        transform: translateY(-2px);
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .logo-item {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    </style>
+
+    <!------------end logo-->
+    <!-----testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">Hear From Our Partners</h2>
+    
+        <div class="testimonial-slider">
+          <div class="testimonial-track">
+            
+    
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-img">
+                  <img src="assets/img/csrimages/Rafiq Somani.jpeg" alt="Mr. RAFIQ SOMANI">
+                </div>
+                <div class="testimonial-content">
+                  <h3>Mr. RAFIQ SOMANI</h3>
+                  <p class="designation">Area VP India & ASEAN Sales (Ansys)</p>
+                  <p class="message">
+                    IIT Kanpur's unwavering focus on social responsibility, deep understanding of the community's needs, and commitment to creating meaningful change have been invaluable in propelling our collaborative journey for CSR activities. Through CSR funding, Ansys has enabled the IITK team to promote and drive systematic and thorough research among postgraduate students in the domains of science, technology, engineering and medicine aimed at promoting Sustainable Developments Goals.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-img">
+                  <img src="assets/img/csrimages/Dheeraj.jpeg" alt="MR. DHEERAJ SAXENA">
+                </div>
+                <div class="testimonial-content">
+                  <h3>MR. DHEERAJ SAXENA</h3>
+                  <p class="designation">Director: Global Engineering, Portescap, Regal Rexnord</p>
+                  <p class="message">
+                    This collaboration with IIT Kanpur is a testament to a shared vision of advancing healthcare solutions through cutting-edge research. Together, we aim to explore new frontiers in medical technology, blending Partescap's industry expertise with the academic, rigor and innovative spirit of IIT Kanpur
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Testimonial 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-img">
+                  <img src="assets/img/csrimages/richard lobo.png" alt="DR. RICHARD LOBO">
+                </div>
+                <div class="testimonial-content">
+                  <h3>DR. RICHARD LOBO</h3>
+                  <p class="designation">
+                    Global Head Business Excellence, Innovation, R&D, Tata Chemicals Ltd.
+                  </p>
+                  <p class="message">
+                    Our journey with IIT Kanpur has been very encouraging not just in terms of Scientific rigor but also the Institute's strong understanding of Industry-Academia collaboration, which has resulted in jointly achieving milestones on time and sharpening of application development outcomes. My team and I have experienced the credo of IIT Kanpur Tamso Maa Jyotirgamaya/Lead me from darkness to light, and we look forward to continuing our partnership on new areas of disruptive innovations.
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-img">
+                  <img src="assets/img/csrimages/A. S prasad.jpg" alt="Dr. A. S. PRASAD">
+                </div>
+                <div class="testimonial-content">
+                  <h3>Dr. A. S. PRASAD</h3>
+                  <p class="designation">General Manager, Integrated Rack Solutions (VERTIV)</p>
+                  <p class="message">
+                    Vertiv takes pride in associating with IIT Kanpur and Shiksha Sopon for making a difference in the lives of the underprivileged in the country through CSR initiative. Education, sustainability and Energy are themes for Vertiv for our CSR funding and we look forward to partnership with IIT Kanpur for further work in all these tracks.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Navigation Controls -->
+          <div class="slider-nav">
+            <button class="nav-btn prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+    
+            <div class="slider-dots"></div>
+    
+            <button class="nav-btn next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <style>
+      .testimonials-section {
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 50px;
+        color: #b04b34;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    
+      .section-title::after {
+        content: "";
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(to right, #b04b34, #d46a4c);
+        display: block;
+        margin: 12px auto 0;
+        border-radius: 2px;
+      }
+    
+      .testimonial-slider {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .testimonial-track {
+        display: flex;
+        transition: transform 0.6s ease-in-out;
+      }
+    
+      .testimonial-slide {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    
+      .testimonial-card {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(176, 75, 52, 0.1);
+        overflow: hidden;
+        transition: all 0.4s ease;
+        border: 1px solid #f5d5cc;
+        max-width: 800px;
+        width: 100%;
+      }
+    
+      .testimonial-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(176, 75, 52, 0.15);
+      }
+    
+      .testimonial-img {
+        text-align: center;
+        padding: 25px 0 15px;
+        background: linear-gradient(to bottom, #b04b34, #d46a4c);
+      }
+    
+      .testimonial-img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+      }
+    
+      .testimonial-content {
+        padding: 25px 30px 35px;
+      }
+    
+      .testimonial-content h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+    
+      .designation {
+        font-size: 1rem;
+        color: #161514;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+    
+      .message {
+        font-size: 0.95rem;
+        color: #555;
+        line-height: 1.6;
+        text-align: justify;
+      }
+    
+      /* Navigation */
+      .slider-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+        gap: 20px;
+      }
+    
+      .nav-btn {
+        background: #b04b34;
+        color: #fff;
+        border: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+    
+      .nav-btn:hover {
+        background: #8f3c29;
+        transform: scale(1.1);
+      }
+    
+      .slider-dots {
+        display: flex;
+        gap: 12px;
+      }
+    
+      .slider-dots .dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #e0b8ae;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+    
+      .slider-dots .dot.active {
+        background: #b04b34;
+        transform: scale(1.2);
+      }
+    </style>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector(".testimonial-track");
+      const slides = document.querySelectorAll(".testimonial-slide");
+      const dotsContainer = document.querySelector(".slider-dots");
+      const prevBtn = document.querySelector(".prev-btn");
+      const nextBtn = document.querySelector(".next-btn");
+      const slider = document.querySelector(".testimonial-slider");
+    
+      if (!track || slides.length === 0) return;
+    
+      let index = 0;
+      const totalSlides = slides.length;
+    
+      // Create dots dynamically
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        if (i === 0) dot.classList.add("active");
+        dot.dataset.slide = i;
+        dotsContainer.appendChild(dot);
+      }
+    
+      const dots = document.querySelectorAll(".slider-dots .dot");
+    
+      function updateSlide() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach(dot => dot.classList.remove("active"));
+        dots[index].classList.add("active");
+      }
+    
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+      });
+    
+      prevBtn.addEventListener("click", () => {
+        index = (index - 1 + totalSlides) % totalSlides;
+        updateSlide();
+      });
+    
+      dots.forEach(dot => {
+        dot.addEventListener("click", () => {
+          index = parseInt(dot.dataset.slide);
+          updateSlide();
+        });
+      });
+    
+      // Auto slide every 4 seconds
+      let autoSlide = setInterval(() => {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+      }, 4000);
+    
+      // Pause on hover
+      slider.addEventListener("mouseenter", () => clearInterval(autoSlide));
+      slider.addEventListener("mouseleave", () => {
+        autoSlide = setInterval(() => {
+          index = (index + 1) % totalSlides;
+          updateSlide();
+        }, 4000);
+      });
+    });
+    </script>
+    
+    <!-- /Testimonials Section -->
+
+
+    
+    <!------------------trusted partners-->
+
+    <section id="gallery-slider" class="gallery-slider section bg-light">
+      <div class="containerx">
+        <h2 class="section-title">Gallery</h2>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="gallery-container">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 800,
+            "autoplay": {
+              "delay": 4000
+            },
+            "effect": "coverflow",
+            "grabCursor": true,
+            "centeredSlides": true,
+            "slidesPerView": "auto",
+            "coverflowEffect": {
+              "rotate": 50,
+              "stretch": 0,
+              "depth": 100,
+              "modifier": 1,
+              "slideShadows": true
+            },
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "navigation": {
+              "nextEl": ".swiper-button-next",
+              "prevEl": ".swiper-button-prev"
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 1,
+                "spaceBetween": 10
+              },
+              "768": {
+                "slidesPerView": 2,
+                "spaceBetween": 20
+              },
+              "1024": {
+                "slidesPerView": 3,
+                "spaceBetween": 30
+              }
+            }
+          }
+        </script>
+            <div class="swiper-wrapper">
+              
+              
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/csrimages/g14.png">
+                      <img src="assets/img/csrimages/g14.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/csrimages/g11.png">
+                      <img src="assets/img/csrimages/g11.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/csrimages/g12.png">
+                      <img src="assets/img/csrimages/g12.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/csrimages/g13.png">
+                      <img src="assets/img/csrimages/g13.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+              
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/csrimages/g20.png">
+                      <img src="assets/img/csrimages/g20.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/csrimages/G22.png">
+                      <img src="assets/img/csrimages/G22.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/csrimages/g23.png">
+                      <img src="assets/img/csrimages/g23.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/csrimages/g24.png">
+                      <img src="assets/img/csrimages/g24.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+    <style>
+      .gallery-slider {
+        overflow: hidden;
+      }
+
+      .gallery-slider .gallery-container {
+        padding: 20px 0 40px;
+        position: relative;
+      }
+
+      .gallery-slider .swiper-wrapper {
+        height: auto !important;
+        align-items: center;
+        padding: 30px 0;
+      }
+
+      .gallery-slider .gallery-item {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+      }
+
+      .gallery-slider .gallery-img {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .gallery-slider .gallery-img img {
+        transition: transform 0.6s ease;
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+      }
+
+      .gallery-slider .gallery-img .gallery-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: color-mix(in srgb, var(--accent-color), transparent 70%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.4s ease;
+      }
+
+      .gallery-slider .gallery-img .gallery-overlay i {
+        color: var(--contrast-color);
+        font-size: 3rem;
+        transform: scale(0.5);
+        transition: all 0.3s ease;
+      }
+
+      .gallery-slider .gallery-img:hover img {
+        transform: scale(1.1);
+      }
+
+      .gallery-slider .gallery-img:hover .gallery-overlay {
+        opacity: 1;
+      }
+
+      .gallery-slider .gallery-img:hover .gallery-overlay i {
+        transform: scale(1);
+      }
+
+      .gallery-slider .swiper-pagination {
+        position: relative;
+        margin-top: 20px;
+      }
+
+      .gallery-slider .swiper-pagination .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: transparent;
+        border: 2px solid var(--accent-color);
+        opacity: 0.7;
+        transition: all 0.3s ease;
+      }
+
+      .gallery-slider .swiper-pagination .swiper-pagination-bullet-active {
+        background: var(--accent-color);
+        opacity: 1;
+        transform: scale(1.2);
+      }
+
+      .gallery-slider .swiper-button-next,
+      .gallery-slider .swiper-button-prev {
+        color: var(--accent-color);
+        background: var(--surface-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .gallery-slider .swiper-button-next:after,
+      .gallery-slider .swiper-button-prev:after {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .gallery-slider:hover .swiper-button-next,
+      .gallery-slider:hover .swiper-button-prev {
+        opacity: 0.9;
+      }
+
+      .gallery-slider:hover .swiper-button-next:hover,
+      .gallery-slider:hover .swiper-button-prev:hover {
+        background: var(--accent-color);
+        color: var(--contrast-color);
+      }
+
+      @media (max-width: 991px) {
+        .gallery-slider .gallery-item {
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-slider .swiper-button-next,
+        .gallery-slider .swiper-button-prev {
+          display: none;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .gallery-slider .swiper-wrapper {
+          padding: 15px 0;
+        }
+
+        .gallery-slider .gallery-img .gallery-overlay i {
+          font-size: 2rem;
+        }
+      }
+
+      /*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+      .gallery .isotope-filters {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 40px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .gallery .isotope-filters li {
+        display: inline-block;
+        padding: 10px 20px;
+        background: var(--surface-color);
+        color: var(--default-color);
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 15px;
+        transition: 0.3s;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .gallery .isotope-filters li:hover {
+        background: color-mix(in srgb, var(--accent-color), transparent 80%);
+      }
+
+      .gallery .isotope-filters li.filter-active {
+        background: var(--accent-color);
+        color: var(--contrast-color);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 576px) {
+        .gallery .isotope-filters {
+          gap: 8px;
+        }
+
+        .gallery .isotope-filters li {
+          padding: 8px 14px;
+          font-size: 14px;
+        }
+      }
+
+      .gallery .gallery-item {
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: 768px) {
+        .gallery .gallery-item {
+          margin-bottom: 20px;
+        }
+      }
+
+      .gallery .gallery-card {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        height: 100%;
+      }
+
+      .gallery .gallery-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .gallery .gallery-card:hover .gallery-overlay {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .gallery .gallery-card:hover .gallery-image img {
+        transform: scale(1.1);
+      }
+
+      .gallery .gallery-image {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 75%;
+        overflow: hidden;
+      }
+
+      .gallery .gallery-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.7s ease;
+      }
+
+      .gallery .gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+        color: var(--contrast-color);
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.4s ease;
+      }
+
+      .gallery .gallery-overlay h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: var(--contrast-color);
+      }
+
+      .gallery .gallery-overlay p {
+        font-size: 14px;
+        margin-bottom: 15px;
+        opacity: 0.9;
+      }
+
+      .gallery .gallery-overlay .gallery-actions {
+        display: flex;
+        gap: 15px;
+      }
+
+      .gallery .gallery-overlay .gallery-actions a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--accent-color);
+        color: var(--contrast-color);
+        font-size: 18px;
+        transition: 0.3s;
+      }
+
+      .gallery .gallery-overlay .gallery-actions a:hover {
+        background: color-mix(in srgb, var(--accent-color), transparent 20%);
+        transform: scale(1.1);
+      }
+
+      .gallery .glightbox-clean .gslide-description {
+        background: #272727;
+      }
+
+      .gallery .glightbox-clean .gslide-title {
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0;
+      }
+    </style>
+
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
       <div class="container">
-        
+
         <!-- Section Title -->
         <div class="section-title text-center mb-5" data-aos="fade-up">
-          <h2>Frequently Asked Questions</h2>
+          <h2 class="section-title">Frequently Asked Questions</h2>
         </div>
-    
+
         <div class="row justify-content-center">
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-            
+
             <div class="row">
               <!-- Left Column -->
               <div class="col-lg-6">
                 <div class="faq-column">
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>What is a Class Legacy Fund?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>A Class Legacy Fund is a fund created by a specific batch or alumni group to support various initiatives at IIT Kanpur. It allows graduates from a particular year or batch to come together and contribute towards the institute's development.</p>
+                      <p>A Class Legacy Fund is a fund created by a specific batch or alumni group to support various
+                        initiatives at IIT Kanpur. It allows graduates from a particular year or batch to come together
+                        and contribute towards the institute's development.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>How will my contribution be used?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>Your contribution will be used to support various initiatives, such as scholarships, campus infrastructure, faculty development, and more. The purpose for which the funds will be utilized will be decided unanimously by the batch.</p>
+                      <p>Your contribution will be used to support various initiatives, such as scholarships, campus
+                        infrastructure, faculty development, and more. The purpose for which the funds will be utilized
+                        will be decided unanimously by the batch.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>Is there a limit on tax exemption if I contribute to IITK?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>There is no limit on the amount for tax exemption if one contributes to IITK. There is 100% tax exemption.</p>
+                      <p>There is no limit on the amount for tax exemption if one contributes to IITK. There is 100% tax
+                        exemption.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>What is a Recurring Contribution?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>A recurring contribution authorises a specific amount of money to be automatically deducted from your bank account, credit card, or any other payment methods at predetermined intervals.</p>
+                      <p>A recurring contribution authorises a specific amount of money to be automatically deducted
+                        from your bank account, credit card, or any other payment methods at predetermined intervals.
+                      </p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>Can I cancel a recurring contribution?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>Yes, one can cancel the recurring contribution at any point of time. Please write to us with the details of your contribution at dora_desk@iitk.ac.in.</p>
+                      <p>Yes, one can cancel the recurring contribution at any point of time. Please write to us with
+                        the details of your contribution at dora_desk@iitk.ac.in.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>Can I set up recurring contributions or pledge a long-term commitment to IIT Kanpur?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>Yes, one can set up recurring contributions or pledge a long-term commitment to IIT Kanpur. This allows one to provide continuous support to the institute projects and initiatives over a longer duration of time.</p>
+                      <p>Yes, one can set up recurring contributions or pledge a long-term commitment to IIT Kanpur.
+                        This allows one to provide continuous support to the institute projects and initiatives over a
+                        longer duration of time.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>Can I make a one-time contribution, or are recurring contributions preferred?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>Both one-time contributions and recurring contributions are welcome. As of now, the recurring contributions are only for Indian Citizens or Alumni living in India.</p>
+                      <p>Both one-time contributions and recurring contributions are welcome. As of now, the recurring
+                        contributions are only for Indian Citizens or Alumni living in India.</p>
                     </div>
                   </div>
                   <div class="faq-item">
@@ -1995,299 +1769,357 @@ document.addEventListener('DOMContentLoaded', function() {
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>Please feel free to write to us at dora_desk@iitk.ac.in or vp_development@iitk.ac.in in case of any questions or concerns.</p>
+                      <p>Please feel free to write to us at dora_desk@iitk.ac.in or vp_development@iitk.ac.in in case of
+                        any questions or concerns.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                 </div>
               </div>
               <!-- End Left Column -->
-    
+
               <!-- Right Column -->
               <div class="col-lg-6">
                 <div class="faq-column">
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>Can I pledge in one go and donate it over a period of time?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>One can choose to contribute in one go or over a period of time depending on your convenience. You can start pledging now at Pledge Form.</p>
+                      <p>One can choose to contribute in one go or over a period of time depending on your convenience.
+                        You can start pledging now at Pledge Form.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>Can I get updates on the impact of my contribution?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>Yes, the institute provides regular updates and reports on how contributions are used and their impact on the institution and its students.</p>
+                      <p>Yes, the institute provides regular updates and reports on how contributions are used and their
+                        impact on the institution and its students.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>Does my employer offer a matching gift program for contributions?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>In the U.S, some employers have matching gift programs where they match or multiply their employees' charitable contributions. Check with your employer to see if such a program is available, which can significantly increase the impact of one's contribution. Please look for 'IITK Foundation Inc' or Indian Institute of Kanpur Foundation Inc in your company's list of approved organisations.</p>
+                      <p>In the U.S, some employers have matching gift programs where they match or multiply their
+                        employees' charitable contributions. Check with your employer to see if such a program is
+                        available, which can significantly increase the impact of one's contribution. Please look for
+                        'IITK Foundation Inc' or Indian Institute of Kanpur Foundation Inc in your company's list of
+                        approved organisations.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>Can I make corporate contributions or explore partnerships with IIT Kanpur?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>Yes, corporations can support IIT Kanpur through its CSR as well as sponsored research programs. Many corporations have already contributed to IIT Kanpur through corporate social responsibility (CSR) initiatives that support educational institutions. Please write to us at dora_desk@iitk.ac.in for more information.</p>
+                      <p>Yes, corporations can support IIT Kanpur through its CSR as well as sponsored research
+                        programs. Many corporations have already contributed to IIT Kanpur through corporate social
+                        responsibility (CSR) initiatives that support educational institutions. Please write to us at
+                        dora_desk@iitk.ac.in for more information.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>How can I make a contribution in memory of someone?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>Many people choose to give to IITK in memory-or in honour of a family member, classmate, faculty member, or friend. Please drop us a mail at dora_desk@iitk.ac.in and we will be glad to share and explore the possibilities.</p>
+                      <p>Many people choose to give to IITK in memory-or in honour of a family member, classmate,
+                        faculty member, or friend. Please drop us a mail at dora_desk@iitk.ac.in and we will be glad to
+                        share and explore the possibilities.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>Will I receive a receipt of my contributions?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>Yes, IITK issues a receipt for all its contributions. This receipt is an important document for tax purposes and can be used to claim any eligible tax benefits.</p>
+                      <p>Yes, IITK issues a receipt for all its contributions. This receipt is an important document for
+                        tax purposes and can be used to claim any eligible tax benefits.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <div class="faq-item">
                     <div class="faq-header">
                       <h3>Can I make an anonymous contribution?</h3>
                       <i class="faq-toggle bi bi-chevron-right"></i>
                     </div>
                     <div class="faq-content">
-                      <p>Yes, anonymous contributions are allowed at IITK. Please click on the check box of anonymous contributions while making the contribution.</p>
+                      <p>Yes, anonymous contributions are allowed at IITK. Please click on the check box of anonymous
+                        contributions while making the contribution.</p>
                     </div>
                   </div><!-- End Faq item-->
-    
+
                   <!-- End Faq item-->
-    
+
                 </div>
               </div><!-- End Right Column -->
             </div>
-    
+
           </div>
         </div>
-    
+
       </div>
     </section>
-    
+
     <style>
-    .faq {
-      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-      padding: 80px 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    .section-title {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-    
-    .description-title {
-      color: #B04B3B;
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-      display: block;
-    }
-    
-    .section-title h2 {
-      color: #212529;
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-    }
-    
-    .section-title p {
-      color: #6c757d;
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-    
-    .faq-column {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    
-    .faq-item {
-      background: white;
-      border-radius: 12px;
-      padding: 0;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border-left: 4px solid #B04B3B;
-      overflow: hidden;
-    }
-    
-    .faq-item:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-    }
-    
-    .faq-item.active {
-      border-left: 4px solid #edcb0f;
-      background: #f8f9fa;
-    }
-    
-    .faq-header {
-      padding: 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 15px;
-    }
-    
-    .faq-header h3 {
-      color: #212529;
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin: 0;
-      line-height: 1.4;
-      flex: 1;
-    }
-    
-    .faq-toggle {
-      color: #B04B3B;
-      font-size: 1.2rem;
-      transition: transform 0.3s ease;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    
-    .faq-item.active .faq-toggle {
-      transform: rotate(90deg);
-      color: #000903;
-    }
-    
-    .faq-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-    }
-    
-    .faq-item.active .faq-content {
-      max-height: 500px;
-    }
-    
-    .faq-content p {
-      color: #6c757d;
-      line-height: 1.6;
-      margin: 0;
-      font-size: 0.95rem;
-      padding: 0 25px 25px 25px;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 992px) {
       .faq {
-        padding: 60px 0;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 80px 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
-      
-      .section-title h2 {
+
+      .faq .section-title {
+        text-align: center;
         font-size: 2rem;
+        font-weight: 700;
+        color: #b04b34;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
-      
-      .section-title p {
-        font-size: 1rem;
-      }
-      
-      .faq-column {
-        gap: 12px;
-      }
-      
-      .faq-header {
-        padding: 20px;
-      }
-      
-      .faq-header h3 {
-        font-size: 1rem;
-      }
-      
-      .faq-content p {
-        padding: 0 20px 20px 20px;
-      }
-    }
-    
-    @media (max-width: 768px) {
-      .faq-column {
-        margin-bottom: 20px;
-      }
-      
-      .faq-header {
-        padding: 18px;
-      }
-      
-      .faq-toggle {
+
+      .description-title {
+        color: #B04B3B;
         font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        display: block;
       }
-      
-      .faq-content p {
-        padding: 0 18px 18px 18px;
-      }
-    }
-    
-    @media (max-width: 576px) {
-      .faq {
-        padding: 40px 0;
-      }
-      
+
       .section-title h2 {
-        font-size: 1.8rem;
+        color: #212529;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
       }
-      
+
+      .section-title p {
+        color: #6c757d;
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+
+      .faq-column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .faq-item {
+        background: white;
+        border-radius: 12px;
+        padding: 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-left: 4px solid #B04B3B;
+        overflow: hidden;
+      }
+
+      .faq-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+      }
+
+      .faq-item.active {
+        border-left: 4px solid #edcb0f;
+        background: #f8f9fa;
+      }
+
+      .faq-header {
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
       .faq-header h3 {
-        font-size: 0.95rem;
+        color: #212529;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.4;
+        flex: 1;
       }
-      
+
+      .faq-toggle {
+        color: #B04B3B;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      .faq-item.active .faq-toggle {
+        transform: rotate(90deg);
+        color: #000903;
+      }
+
+      .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+
+      .faq-item.active .faq-content {
+        max-height: 500px;
+      }
+
       .faq-content p {
-        font-size: 0.9rem;
+        color: #6c757d;
+        line-height: 1.6;
+        margin: 0;
+        font-size: 0.95rem;
+        padding: 0 25px 25px 25px;
       }
-    }
+
+      /* Responsive Design */
+      @media (max-width: 992px) {
+        .faq {
+          padding: 60px 0;
+        }
+
+        .section-title h2 {
+          font-size: 2rem;
+        }
+
+        .section-title p {
+          font-size: 1rem;
+        }
+
+        .faq-column {
+          gap: 12px;
+        }
+
+        .faq-header {
+          padding: 20px;
+        }
+
+        .faq-header h3 {
+          font-size: 1rem;
+        }
+
+        .faq-content p {
+          padding: 0 20px 20px 20px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .faq-column {
+          margin-bottom: 20px;
+        }
+
+        .faq-header {
+          padding: 18px;
+        }
+
+        .faq-toggle {
+          font-size: 1.1rem;
+        }
+
+        .faq-content p {
+          padding: 0 18px 18px 18px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .faq {
+          padding: 40px 0;
+        }
+
+        .section-title h2 {
+          font-size: 1.8rem;
+        }
+
+        .faq-header h3 {
+          font-size: 0.95rem;
+        }
+
+        .faq-content p {
+          font-size: 0.9rem;
+        }
+      }
     </style>
-    
+
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const faqItems = document.querySelectorAll('.faq-item');
-      
-      faqItems.forEach(item => {
-        item.addEventListener('click', function() {
-          // Toggle active class on clicked item
-          this.classList.toggle('active');
+      document.addEventListener('DOMContentLoaded', function () {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+          item.addEventListener('click', function () {
+            // Toggle active class on clicked item
+            this.classList.toggle('active');
+          });
         });
       });
+    </script>
+   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    
+      /* ------------------- LOGO SECTION ------------------- */
+      const logos = document.querySelectorAll(".logo-item");
+      const toggleBtn = document.getElementById("toggleBtn");
+    
+      if (logos.length && toggleBtn) {
+        const visibleCount = 14; // how many logos show initially
+        let currentlyVisible = visibleCount;
+    
+        // Hide all logos beyond visibleCount
+        logos.forEach((logo, index) => {
+          if (index >= visibleCount) logo.style.display = "none";
+        });
+    
+        // Toggle button logic
+        toggleBtn.addEventListener("click", () => {
+          if (currentlyVisible < logos.length) {
+            for (let i = currentlyVisible; i < currentlyVisible + visibleCount && i < logos.length; i++) {
+              logos[i].style.display = "flex";
+            }
+            currentlyVisible += visibleCount;
+            if (currentlyVisible >= logos.length) toggleBtn.textContent = "View Less";
+          } else {
+            logos.forEach((logo, index) => {
+              if (index >= visibleCount) logo.style.display = "none";
+            });
+            currentlyVisible = visibleCount;
+            toggleBtn.textContent = "View More";
+          }
+        });
+      }
     });
+    
+    
+    
     </script>
     
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"><!-- /Faq Section -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- /Faq Section -->
 
-  
+
 
   </main>
 
@@ -2295,19 +2127,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="container footer-top">
       <div class="row gy-4">
-  
+
         <!-- About / Logo -->
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">IITK DoRA</span>
           </a>
-          <p>Office of Dean of Resources & Alumni, Faculty Building Annexe, Third floor, IIT Kanpur - 208016, Uttar Pradesh, India.</p>
+          <p>Office of Dean of Resources & Alumni, Faculty Building Annexe, Third floor, IIT Kanpur - 208016, Uttar
+            Pradesh, India.</p>
           <div class="social-links d-flex mt-4">
             <a href="https://www.youtube.com/@iitkanpur"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.linkedin.com/school/indian-institute-of-technology-kanpur/?originalSubdomain=in"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/school/indian-institute-of-technology-kanpur/?originalSubdomain=in"><i
+                class="bi bi-linkedin"></i></a>
           </div>
         </div>
-  
+
         <!-- Useful Links -->
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
@@ -2318,18 +2152,19 @@ document.addEventListener('DOMContentLoaded', function() {
             <li><i class="bi bi-chevron-right"></i> <a href="https://iitk.ac.in/dora/giveback/">Give Back</a></li>
           </ul>
         </div>
-  
+
         <!-- Initiatives Links -->
         <div class="col-lg-2 col-6 footer-links">
           <h4>Initiatives</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="https://iitk.ac.in/dora/reunion-24-25.php">Class Reunions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://iitk.ac.in/dora/reunion-24-25.php">Class
+                Reunions</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="https://iitk.ac.in/dora/giveback/">Mentorship</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="https://iitk.ac.in/dora/giveback/">Planned Giving</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="https://iitk.ac.in/dora/giveback/">Student Support</a></li>
           </ul>
         </div>
-  
+
         <!-- Contact Info -->
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
@@ -2337,17 +2172,18 @@ document.addEventListener('DOMContentLoaded', function() {
           <p><strong>Email:</strong> alumni@iitk.ac.in</p>
           <p>Office of Dean of Resources & Alumni, Faculty Building Annexe, Third floor, IIT Kanpur, UP, India</p>
         </div>
-  
+
       </div>
     </div>
-  
+
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">IIT Kanpur - DoRA Office</strong> <span>All Rights Reserved</span></p>
-      
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">IIT Kanpur - DoRA Office</strong> <span>All Rights
+          Reserved</span></p>
+
     </div>
-  
+
   </footer>
-  
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -2360,6 +2196,9 @@ document.addEventListener('DOMContentLoaded', function() {
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
