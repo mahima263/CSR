@@ -946,6 +946,7 @@ section,
   line-height: 1.2;
   margin: 0;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
