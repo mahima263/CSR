@@ -131,7 +131,7 @@
         <img src="assets/img/about/bannerrrr.jpeg" class="csr-banner-image" alt="CSR Banner">
       </div>
     </section>
-
+    
     <style>
       /* CSR Banner Section */
       .csr-banner {
@@ -139,42 +139,69 @@
         width: 100%;
         overflow: hidden;
       }
-
+    
       .csr-banner-wrapper {
         width: 100%;
-        /* Set the desired height for all desktops (1025px and up) */
-        height: 95vh;
+        height: 95vh; /* desktop height */
         display: flex;
         justify-content: center;
         align-items: center;
       }
-
+    
       .csr-banner-image {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        /* ensures full coverage without distortion */
         object-position: center;
         display: block;
       }
-
-
-
+    
       /* Large tablets or small laptops (1024px and down) */
       @media (max-width: 1024px) {
         .csr-banner-wrapper {
           height: 90vh;
         }
       }
-
-      /* Example for standard tablets (768px and down) */
+    
+      /* Tablets and below */
       @media (max-width: 768px) {
         .csr-banner-wrapper {
           height: 85vh;
         }
+    
+        /* Replace banner image on mobile */
+        .csr-banner-image {
+          content: url("CSR mobile.jpeg");
+          object-fit: cover;
+          object-position: center;
+        }
       }
-    </style>
+    
+      /* Very small screens (like iPhone SE or foldables) */
+      @media (max-width: 480px) {
+        .csr-banner-wrapper {
+          height: 80vh;
+        }
+      }
+      /* ✅ All iPads (Mini, Air, Pro - portrait & landscape) */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
 
+  .csr-banner-image {
+    content: url("CSR mobile.jpeg"); 
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .csr-banner-wrapper {
+    height: 85vh;
+  }
+}
+
+    </style>
+    
 
     <!-- /Hero Section -->
 
@@ -573,7 +600,7 @@
           <!-- Project 2 -->
           <div class="project-card" data-project="dhs">
             <div class="project-img">
-              <img src="assets/img/csrimages/pro2.png" alt="Digital Health Stack">
+              <img src="assets/img/about/digital_health.jpg" alt="Digital Health Stack">
             </div>
             <div class="project-info">
               <h3>Digital Health Stack</h3>
@@ -586,10 +613,10 @@
           <!-- Project 3 -->
           <div class="project-card" data-project="wabtec">
             <div class="project-img">
-              <img src="assets/img/csrimages/pro3.png" alt="Wabtec">
+              <img src="assets/img/about/train.webp" alt="Wabtec">
             </div>
             <div class="project-info">
-              <h3>Wabtec Coorparation</h3>
+              <h3>Wabtec Corporation</h3>
               <p>Enhancing Railway Safety and Infrastructure Durability</p>
               <button class="read-more-btn">Read More</button>
             </div>
@@ -789,7 +816,7 @@
     `,
 
         wabtec: `
-      <h3>WABTEC Project</h3>
+      <h3>WABTEC Corporation Project</h3>
       <h4>Enhancing Railway Safety and Infrastructure Durability</h4>
       <p>A multidisciplinary project at <b>IIT Kanpur</b> has advanced railway safety through innovations in monitoring and materials. Using modified <b>Phased Array Ultrasonic Testing (PAUT)</b>, researchers achieved high-precision detection of micro-cracks (as small as 2–3 mm) in critical rail sections, enabling real-time condition monitoring and reducing derailment risks.</p>
   
@@ -1912,214 +1939,122 @@
     <!-- Faq Section -->
     <section id="faq" class="faq section">
       <div class="container">
-
-        <!-- Section Title -->
-        <div class="section-title text-center mb-5" data-aos="fade-up">
-          <h2 class="section-title">Frequently Asked Questions</h2>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="row">
-              <!-- Left Column -->
-              <div class="col-lg-6">
-                <div class="faq-column">
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>What is a Class Legacy Fund?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>A Class Legacy Fund is a fund created by a specific batch or alumni group to support various
-                        initiatives at IIT Kanpur. It allows graduates from a particular year or batch to come together
-                        and contribute towards the institute's development.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>How will my contribution be used?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>Your contribution will be used to support various initiatives, such as scholarships, campus
-                        infrastructure, faculty development, and more. The purpose for which the funds will be utilized
-                        will be decided unanimously by the batch.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>Is there a limit on tax exemption if I contribute to IITK?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>There is no limit on the amount for tax exemption if one contributes to IITK. There is 100% tax
-                        exemption.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>What is a Recurring Contribution?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>A recurring contribution authorises a specific amount of money to be automatically deducted
-                        from your bank account, credit card, or any other payment methods at predetermined intervals.
-                      </p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>Can I cancel a recurring contribution?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>Yes, one can cancel the recurring contribution at any point of time. Please write to us with
-                        the details of your contribution at dora_desk@iitk.ac.in.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>Can I set up recurring contributions or pledge a long-term commitment to IIT Kanpur?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>Yes, one can set up recurring contributions or pledge a long-term commitment to IIT Kanpur.
-                        This allows one to provide continuous support to the institute projects and initiatives over a
-                        longer duration of time.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>Can I make a one-time contribution, or are recurring contributions preferred?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>Both one-time contributions and recurring contributions are welcome. As of now, the recurring
-                        contributions are only for Indian Citizens or Alumni living in India.</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>How can I get in touch with the fundraising or development office at IITK?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>Please feel free to write to us at dora_desk@iitk.ac.in or vp_development@iitk.ac.in in case of
-                        any questions or concerns.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                </div>
-              </div>
-              <!-- End Left Column -->
-
-              <!-- Right Column -->
-              <div class="col-lg-6">
-                <div class="faq-column">
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>Can I pledge in one go and donate it over a period of time?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>One can choose to contribute in one go or over a period of time depending on your convenience.
-                        You can start pledging now at Pledge Form.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>Can I get updates on the impact of my contribution?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>Yes, the institute provides regular updates and reports on how contributions are used and their
-                        impact on the institution and its students.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>Does my employer offer a matching gift program for contributions?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>In the U.S, some employers have matching gift programs where they match or multiply their
-                        employees' charitable contributions. Check with your employer to see if such a program is
-                        available, which can significantly increase the impact of one's contribution. Please look for
-                        'IITK Foundation Inc' or Indian Institute of Kanpur Foundation Inc in your company's list of
-                        approved organisations.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>Can I make corporate contributions or explore partnerships with IIT Kanpur?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>Yes, corporations can support IIT Kanpur through its CSR as well as sponsored research
-                        programs. Many corporations have already contributed to IIT Kanpur through corporate social
-                        responsibility (CSR) initiatives that support educational institutions. Please write to us at
-                        dora_desk@iitk.ac.in for more information.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>How can I make a contribution in memory of someone?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>Many people choose to give to IITK in memory-or in honour of a family member, classmate,
-                        faculty member, or friend. Please drop us a mail at dora_desk@iitk.ac.in and we will be glad to
-                        share and explore the possibilities.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>Will I receive a receipt of my contributions?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>Yes, IITK issues a receipt for all its contributions. This receipt is an important document for
-                        tax purposes and can be used to claim any eligible tax benefits.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <div class="faq-header">
-                      <h3>Can I make an anonymous contribution?</h3>
-                      <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div>
-                    <div class="faq-content">
-                      <p>Yes, anonymous contributions are allowed at IITK. Please click on the check box of anonymous
-                        contributions while making the contribution.</p>
-                    </div>
-                  </div><!-- End Faq item-->
-
-                  <!-- End Faq item-->
-
-                </div>
-              </div><!-- End Right Column -->
-            </div>
-
+  
+          <!-- Section Title -->
+          <div class="section-title text-center mb-5" data-aos="fade-up">
+              <h2 class="section-title">Frequently Asked Questions</h2>
           </div>
-        </div>
-
+  
+          <div class="row justify-content-center">
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+  
+                  <div class="row">
+                      <!-- Left Column -->
+                      <div class="col-lg-6">
+                          <div class="faq-column">
+  
+                              <div class="faq-item">
+                                  <div class="faq-header">
+                                      <h3>Is there a limit on tax exemption for CSR contributions made to IIT Kanpur?</h3>
+                                      <i class="faq-toggle bi bi-chevron-right"></i>
+                                  </div>
+                                  <div class="faq-content">
+                                      <p>The institute is eligible to receive contributions under Section 80G of the Income Tax Act, which offers 100% tax exemption on eligible donations.</p>
+                                  </div>
+                              </div><!-- End Faq item-->
+  
+                              <div class="faq-item">
+                                  <div class="faq-header">
+                                      <h3>Can companies receive reports or updates on the impact of their CSR contributions?</h3>
+                                      <i class="faq-toggle bi bi-chevron-right"></i>
+                                  </div>
+                                  <div class="faq-content">
+                                      <p>Yes, IIT Kanpur provides periodic impact reports detailing how CSR contributions are utilized, including progress updates, beneficiary data, and measurable outcomes of the supported projects. Transparency and accountability are key principles of our CSR collaborations.</p>
+                                  </div>
+                              </div><!-- End Faq item-->
+  
+                              <div class="faq-item">
+                                  <div class="faq-header">
+                                      <h3>Can corporates collaborate with IIT Kanpur beyond direct funding?</h3>
+                                      <i class="faq-toggle bi bi-chevron-right"></i>
+                                  </div>
+                                  <div class="faq-content">
+                                      <p>Absolutely. IIT Kanpur encourages strategic partnerships that go beyond monetary support including co-development of technologies, setting up student fellowships, infrastructure development, and innovation-driven CSR programs aligned with the company's thematic interests.</p>
+                                  </div>
+                              </div><!-- End Faq item-->
+  
+                              <div class="faq-item">
+                                  <div class="faq-header">
+                                      <h3>Will IIT Kanpur provide official documentation for CSR compliance and accounting?</h3>
+                                      <i class="faq-toggle bi bi-chevron-right"></i>
+                                  </div>
+                                  <div class="faq-content">
+                                      <p>Yes, IIT Kanpur issues official receipts and utilization certificates for all CSR contributions, along with detailed project reports as per CSR compliance requirements. These documents can be used for statutory filings and internal CSR reporting.</p>
+                                  </div>
+                              </div><!-- End Faq item-->
+  
+                          </div>
+                      </div>
+                      <!-- End Left Column -->
+  
+                      <!-- Right Column -->
+                      <div class="col-lg-6">
+                          <div class="faq-column">
+  
+                              <div class="faq-item">
+                                  <div class="faq-header">
+                                      <h3>What are the thematic areas where IIT Kanpur accepts CSR support?</h3>
+                                      <i class="faq-toggle bi bi-chevron-right"></i>
+                                  </div>
+                                  <div class="faq-content">
+                                      <p>CSR contributions can support a wide range of areas including education, healthcare, sustainability, clean energy, skill development, rural upliftment, and innovation for social good. IIT Kanpur aligns CSR projects with the company's focus areas to ensure mutual value creation.</p>
+                                  </div>
+                              </div><!-- End Faq item-->
+  
+                              <div class="faq-item">
+                                  <div class="faq-header">
+                                      <h3>Does IIT Kanpur assist in developing customized CSR proposals?</h3>
+                                      <i class="faq-toggle bi bi-chevron-right"></i>
+                                  </div>
+                                  <div class="faq-content">
+                                      <p>Yes, the CSR and Development Office at IIT Kanpur collaborates closely with corporate partners to design proposals aligned with both the company's CSR policy and the institute's research expertise. This ensures high social impact.</p>
+                                  </div>
+                              </div><!-- End Faq item-->
+  
+                              <div class="faq-item">
+                                  <div class="faq-header">
+                                      <h3>Are CSR contributions monitored and evaluated for impact?</h3>
+                                      <i class="faq-toggle bi bi-chevron-right"></i>
+                                  </div>
+                                  <div class="faq-content">
+                                      <p>Yes, all CSR-funded projects at IIT Kanpur undergo periodic monitoring and evaluation to track progress, outcomes, and long-term impact. The institute shares these reports with corporate partners to maintain transparency and accountability.</p>
+                                  </div>
+                              </div><!-- End Faq item-->
+  
+                              <div class="faq-item">
+                                  <div class="faq-header">
+                                      <h3>How can a company initiate a CSR partnership with IIT Kanpur?</h3>
+                                      <i class="faq-toggle bi bi-chevron-right"></i>
+                                  </div>
+                                  <div class="faq-content">
+                                    <p>
+                                      To begin a CSR partnership or discuss potential project areas, please write to 
+                                      <a href="mailto:dora_desk@iitk.ac.in">dora_desk@iitk.ac.in</a> or 
+                                      <a href="mailto:vp_development@iitk.ac.in">vp_development@iitk.ac.in</a>. 
+                                      The IIT Kanpur CSR team will assist you through each step from proposal development to project execution and reporting.
+                                  </p>
+                                                                    </div>
+                              </div><!-- End Faq item-->
+  
+                          </div>
+                      </div><!-- End Right Column -->
+                  </div>
+  
+              </div>
+          </div>
+  
       </div>
-    </section>
-
+  </section>
     <style>
       .faq {
         background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
